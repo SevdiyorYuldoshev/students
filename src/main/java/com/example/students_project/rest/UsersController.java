@@ -42,7 +42,6 @@ public class UsersController {
                     @ApiResponse(responseCode = "400", description = "Bad request", content = @Content(mediaType = "application/json", schema = @Schema(implementation = ResponseDto.class)))
             }
     )
-    @PreAuthorize("hasAnyRole('USER','ADMIN', 'SUPER_ADMIN')")
     @PostMapping
     public ResponseDto<UsersDto> addUser(@Valid @RequestBody UsersDto usersDto){
         return userService.addUser(usersDto);
