@@ -4,10 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5dcf92d4-8d94-4b12-bc95-ffc5fb4ef22f" name="Changes" comment="ignore papka qo'shildi">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
-    </list>
+    <list default="true" id="5dcf92d4-8d94-4b12-bc95-ffc5fb4ef22f" name="Changes" comment="ignore papka qo'shildi" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -106,7 +103,7 @@
       <workItem from="1701277381564" duration="6664000" />
       <workItem from="1701320362840" duration="230000" />
       <workItem from="1701363704836" duration="1781000" />
-      <workItem from="1701511741343" duration="2387000" />
+      <workItem from="1701511741343" duration="2735000" />
     </task>
     <task id="LOCAL-00001" summary="Kodlar qo'shildi">
       <created>1701512414429</created>
