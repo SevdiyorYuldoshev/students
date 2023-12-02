@@ -5,5 +5,5 @@ import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
 @Repository
-public interface PracticeSolvedByUsersDtoRepository extends JpaRepository<PracticeSolvedByUsers, Integer> {
+public interface PracticeSolvedByUsersRepository extends JpaRepository<PracticeSolvedByUsers, Integer> {
 }

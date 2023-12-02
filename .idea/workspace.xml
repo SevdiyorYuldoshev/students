@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="5dcf92d4-8d94-4b12-bc95-ffc5fb4ef22f" name="Changes" comment="Codlar qo'shildi">
+      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources/96cc8741-bf59-422b-b347-579921ad05a8.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources/96cc8741-bf59-422b-b347-579921ad05a8/storage_v2/_src_/database/tatu.rjU2AA.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources/96cc8741-bf59-422b-b347-579921ad05a8/storage_v2/_src_/database/tatu.rjU2AA/schema/information_schema.FNRwLQ.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources/96cc8741-bf59-422b-b347-579921ad05a8/storage_v2/_src_/database/tatu.rjU2AA/schema/pg_catalog.0S1ZNQ.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources/96cc8741-bf59-422b-b347-579921ad05a8/storage_v2/_src_/database/tatu.rjU2AA/schema/public.abK9xQ.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HELP.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/image/23/11/27/1701081143864.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/example/students_project/StudentsProjectApplication.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/example/students_project/config/AppConfig.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/example/students_project/config/ExceptionHandler.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/example/students_project/config/LocalDateTimeDeserializer.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/example/students_project/config/LocalDateTimeSerializer.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/example/students_project/config/SecurityConfiguration.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/example/students_project/config/SwaggerConfig.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/example/students_project/dto/ErrorDto.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/example/students_project/dto/FileDto$FileDtoBuilder.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/example/students_project/dto/FileDto.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/example/students_project/dto/ImageDto$ImageDtoBuilder.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/example/students_project/dto/ImageDto.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/example/students_project/dto/LoginDto$LoginDtoBuilder.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/example/students_project/dto/LoginDto.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/example/students_project/dto/PracticeDto.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/example/students_project/dto/PracticeSolvedByUsersDto.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/example/students_project/dto/ResponseDto$ResponseDtoBuilder.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/example/students_project/dto/ResponseDto.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/example/students_project/dto/SubjectDto$SubjectDtoBuilder.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/example/students_project/dto/SubjectDto.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/example/students_project/dto/UploadDto.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/example/students_project/dto/UsersDto.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/example/students_project/entity/Image.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/example/students_project/entity/Practice.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/example/students_project/entity/PracticeSolvedByUsers.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/example/students_project/entity/Subject.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/example/students_project/entity/UserSession.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/example/students_project/entity/Users.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/example/students_project/io/FileDownload.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/example/students_project/io/FileUpload.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/example/students_project/repository/ImageRepository.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/example/students_project/repository/PracticeRepository.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/example/students_project/repository/PracticeSolvedByUsersRepository.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/example/students_project/repository/SubjectRepository.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/example/students_project/repository/UserRepository.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/example/students_project/repository/UserSessionRepository.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/example/students_project/rest/FileController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/example/students_project/rest/ImageController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/example/students_project/rest/PracticeController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/example/students_project/rest/PracticeSolvedByUsersController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/example/students_project/rest/SubjectController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/example/students_project/rest/UsersController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/example/students_project/security/JwtFilter.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/example/students_project/security/JwtService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/example/students_project/security/UserAuthorities.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/example/students_project/security/UserRoles.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/example/students_project/service/FileService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/example/students_project/service/ImageService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/example/students_project/service/PracticeService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/example/students_project/service/PracticeSolvedByUsersService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/example/students_project/service/SubjectService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/example/students_project/service/UsersService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/example/students_project/service/impl/FileServiceImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/example/students_project/service/impl/ImageServiceImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/example/students_project/service/impl/PracticeServiceImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/example/students_project/service/impl/PracticeSolvedByUsersServiceImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/example/students_project/service/impl/SubjectServiceImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/example/students_project/service/impl/UsersServiceImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/example/students_project/service/mapper/CommonMapper.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/example/students_project/service/mapper/ImageMapper.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/example/students_project/service/mapper/ImageMapperImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/example/students_project/service/mapper/PracticeMapper.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/example/students_project/service/mapper/PracticeMapperImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/example/students_project/service/mapper/PracticeSolvedByUsersMapper.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/example/students_project/service/mapper/PracticeSolvedByUsersMapperImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/example/students_project/service/mapper/SubjectMapper.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/example/students_project/service/mapper/SubjectMapperImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/example/students_project/service/mapper/UsersMapper.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/example/students_project/service/mapper/UsersMapperImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/example/students_project/service/validation/StatusCode.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/example/students_project/service/validation/StatusMessage.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/generated-sources/annotations/com/example/students_project/service/mapper/ImageMapperImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/generated-sources/annotations/com/example/students_project/service/mapper/PracticeMapperImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/generated-sources/annotations/com/example/students_project/service/mapper/PracticeSolvedByUsersMapperImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/generated-sources/annotations/com/example/students_project/service/mapper/SubjectMapperImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/generated-sources/annotations/com/example/students_project/service/mapper/UsersMapperImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/students_project/StudentsProjectApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/students_project/StudentsProjectApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/students_project/config/AppConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/students_project/config/AppConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/students_project/config/ExceptionHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/students_project/config/ExceptionHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/students_project/config/LocalDateTimeDeserializer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/students_project/config/LocalDateTimeDeserializer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/students_project/config/LocalDateTimeSerializer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/students_project/config/LocalDateTimeSerializer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/students_project/config/SecurityConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/students_project/config/SecurityConfiguration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/students_project/config/SwaggerConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/students_project/config/SwaggerConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/students_project/dto/ErrorDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/students_project/dto/ErrorDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/students_project/dto/FileDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/students_project/dto/FileDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/students_project/dto/ImageDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/students_project/dto/ImageDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/students_project/dto/LoginDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/students_project/dto/LoginDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/students_project/dto/PracticeDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/students_project/dto/PracticeDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/students_project/dto/PracticeSolvedByUsersDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/students_project/dto/PracticeSolvedByUsersDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/students_project/dto/ResponseDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/students_project/dto/ResponseDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/students_project/dto/SubjectDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/students_project/dto/SubjectDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/students_project/dto/UploadDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/students_project/dto/UploadDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/students_project/dto/UsersDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/students_project/dto/UsersDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/students_project/entity/Image.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/students_project/entity/Image.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/students_project/entity/Practice.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/students_project/entity/Practice.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/students_project/entity/PracticeSolvedByUsers.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/students_project/entity/PracticeSolvedByUsers.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/students_project/entity/Subject.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/students_project/entity/Subject.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/students_project/entity/UserSession.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/students_project/entity/UserSession.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/students_project/entity/Users.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/students_project/entity/Users.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/students_project/io/FileDownload.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/students_project/io/FileDownload.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/students_project/io/FileUpload.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/students_project/io/FileUpload.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/students_project/repository/ImageRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/students_project/repository/ImageRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/students_project/repository/PracticeRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/students_project/repository/PracticeRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/students_project/repository/PracticeSolvedByUsersRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/students_project/repository/PracticeSolvedByUsersRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/students_project/repository/SubjectRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/students_project/repository/SubjectRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/students_project/repository/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/students_project/repository/UserRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/students_project/repository/UserSessionRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/students_project/repository/UserSessionRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/students_project/rest/FileController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/students_project/rest/FileController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/students_project/rest/ImageController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/students_project/rest/ImageController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/students_project/rest/PracticeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/students_project/rest/PracticeController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/students_project/rest/PracticeSolvedByUsersController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/students_project/rest/PracticeSolvedByUsersController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/students_project/rest/SubjectController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/students_project/rest/SubjectController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/students_project/rest/UsersController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/students_project/rest/UsersController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/students_project/security/JwtFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/students_project/security/JwtFilter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/students_project/security/JwtService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/students_project/security/JwtService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/students_project/security/UserAuthorities.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/students_project/security/UserAuthorities.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/students_project/security/UserRoles.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/students_project/security/UserRoles.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/students_project/service/FileService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/students_project/service/FileService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/students_project/service/ImageService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/students_project/service/ImageService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/students_project/service/PracticeService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/students_project/service/PracticeService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/students_project/service/PracticeSolvedByUsersService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/students_project/service/PracticeSolvedByUsersService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/students_project/service/SubjectService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/students_project/service/SubjectService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/students_project/service/UsersService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/students_project/service/UsersService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/students_project/service/impl/FileServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/students_project/service/impl/FileServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/students_project/service/impl/ImageServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/students_project/service/impl/ImageServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/students_project/service/impl/PracticeServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/students_project/service/impl/PracticeServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/students_project/service/impl/PracticeSolvedByUsersServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/students_project/service/impl/PracticeSolvedByUsersServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/students_project/service/impl/SubjectServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/students_project/service/impl/SubjectServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/students_project/service/impl/UsersServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/students_project/service/impl/UsersServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/students_project/service/mapper/CommonMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/students_project/service/mapper/CommonMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/students_project/service/mapper/ImageMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/students_project/service/mapper/ImageMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/students_project/service/mapper/PracticeMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/students_project/service/mapper/PracticeMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/students_project/service/mapper/PracticeSolvedByUsersMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/students_project/service/mapper/PracticeSolvedByUsersMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/students_project/service/mapper/SubjectMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/students_project/service/mapper/SubjectMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/students_project/service/mapper/UsersMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/students_project/service/mapper/UsersMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/students_project/service/validation/StatusCode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/students_project/service/validation/StatusCode.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/students_project/service/validation/StatusMessage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/students_project/service/validation/StatusMessage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="Use Maven wrapper" />
+        <option name="useMavenConfig" value="true" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="2YO9kNwWjRpsXWHKGLVnd2N7V9y" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/Java/students_project&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;spring.configuration.checksum&quot;: &quot;8b5e753b822887968236994c91b7ff02&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  },
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;postgresql&quot;
+    ]
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="com.example.students_project.service.mapper" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="StudentsProjectApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="students_project" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.students_project.StudentsProjectApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="5dcf92d4-8d94-4b12-bc95-ffc5fb4ef22f" name="Changes" comment="" />
+      <created>1700385903774</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1700385903774</updated>
+      <workItem from="1700385904783" duration="4100000" />
+      <workItem from="1700588839316" duration="4490000" />
+      <workItem from="1700762614574" duration="1326000" />
+      <workItem from="1700899047791" duration="11608000" />
+      <workItem from="1700975650098" duration="12302000" />
+      <workItem from="1701021623028" duration="4074000" />
+      <workItem from="1701078041478" duration="4374000" />
+      <workItem from="1701099706017" duration="5176000" />
+      <workItem from="1701163705067" duration="7473000" />
+      <workItem from="1701180162123" duration="10549000" />
+      <workItem from="1701192480181" duration="4838000" />
+      <workItem from="1701226084217" duration="3310000" />
+      <workItem from="1701234378104" duration="6895000" />
+      <workItem from="1701247133115" duration="3437000" />
+      <workItem from="1701261148208" duration="10273000" />
+      <workItem from="1701277381564" duration="6664000" />
+      <workItem from="1701320362840" duration="230000" />
+      <workItem from="1701363704836" duration="1781000" />
+      <workItem from="1701511741343" duration="375000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Codlar qo'shildi" />
+    <option name="LAST_COMMIT_MESSAGE" value="Codlar qo'shildi" />
+  </component>
+</project>

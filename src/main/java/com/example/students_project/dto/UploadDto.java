@@ -1,2 +1,4 @@
-package com.example.students_project.dto;public class UploadDto {
+package com.example.students_project.dto;
+
+public class UploadDto {
 }
