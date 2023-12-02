@@ -4,7 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5dcf92d4-8d94-4b12-bc95-ffc5fb4ef22f" name="Changes" comment="Kodlar qo'shildi" />
+    <list default="true" id="5dcf92d4-8d94-4b12-bc95-ffc5fb4ef22f" name="Changes" comment="ignore papka qo'shildi">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -103,7 +106,7 @@
       <workItem from="1701277381564" duration="6664000" />
       <workItem from="1701320362840" duration="230000" />
       <workItem from="1701363704836" duration="1781000" />
-      <workItem from="1701511741343" duration="746000" />
+      <workItem from="1701511741343" duration="2387000" />
     </task>
     <task id="LOCAL-00001" summary="Kodlar qo'shildi">
       <created>1701512414429</created>
@@ -112,7 +115,28 @@
       <option name="project" value="LOCAL" />
       <updated>1701512414429</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="ignore papka qo'shildi">
+      <created>1701512609976</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1701512609976</updated>
+    </task>
+    <task id="LOCAL-00003" summary="ignore papka qo'shildi">
+      <created>1701512630206</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1701512630206</updated>
+    </task>
+    <task id="LOCAL-00004" summary="ignore papka qo'shildi">
+      <created>1701512830233</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1701512830233</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -132,6 +156,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Codlar qo'shildi" />
     <MESSAGE value="Kodlar qo'shildi" />
-    <option name="LAST_COMMIT_MESSAGE" value="Kodlar qo'shildi" />
+    <MESSAGE value="ignore papka qo'shildi" />
+    <option name="LAST_COMMIT_MESSAGE" value="ignore papka qo'shildi" />
   </component>
 </project>
