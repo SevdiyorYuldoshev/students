@@ -13,4 +13,7 @@ public interface UserRepository extends JpaRepository<Users, Integer> {
     boolean usernameExists(String username);
 
     Optional<Users> findFirstByUsername(String username);
+
+//    @Query(value = "select * from users u where u.id = ?1 and u.activity = ?2", nativeQuery = true)
+    Optional<Users> findByIdAndActivityEquals(Integer id, int activity);
 }

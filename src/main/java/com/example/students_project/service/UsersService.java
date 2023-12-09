@@ -25,4 +25,6 @@ public interface UsersService extends UserDetailsService {
     ResponseDto<String> loginUser(LoginDto loginDto);
 
     ResponseDto<UsersDto> updatePassword(String username, String password, String newPassword);
+
+    ResponseDto<UsersDto> createAdmin(Integer id);
 }

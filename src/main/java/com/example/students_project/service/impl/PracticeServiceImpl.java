@@ -8,22 +8,25 @@ import com.example.students_project.entity.Practice;
 import com.example.students_project.entity.Subject;
 import com.example.students_project.entity.Users;
 import com.example.students_project.repository.PracticeRepository;
+import com.example.students_project.repository.PracticeSolvedByUsersRepository;
+import com.example.students_project.repository.SubjectRepository;
 import com.example.students_project.rest.PracticeController;
 import com.example.students_project.rest.UsersController;
 import com.example.students_project.service.PracticeService;
 import com.example.students_project.service.mapper.PracticeMapper;
+import com.example.students_project.service.mapper.SubjectMapper;
 import lombok.RequiredArgsConstructor;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
 import org.springframework.hateoas.EntityModel;
 import org.springframework.stereotype.Service;
 
+import java.time.LocalDateTime;
 import java.util.Optional;
 
-import static com.example.students_project.service.validation.StatusCode.NOT_FOUND_CODE;
-import static com.example.students_project.service.validation.StatusCode.OK_CODE;
-import static com.example.students_project.service.validation.StatusMessage.NOT_FOUND;
-import static com.example.students_project.service.validation.StatusMessage.OK;
+import static com.example.students_project.service.validation.StatusCode.*;
+import static com.example.students_project.service.validation.StatusMessage.*;
+import static com.example.students_project.service.validation.StatusMessage.DATABASE_ERROR;
 import static org.springframework.hateoas.server.mvc.WebMvcLinkBuilder.linkTo;
 
 @Service
@@ -31,8 +34,19 @@ import static org.springframework.hateoas.server.mvc.WebMvcLinkBuilder.linkTo;
 public class PracticeServiceImpl implements PracticeService {
     private final PracticeMapper practiceMapper;
     private final PracticeRepository practiceRepository;
+    private final PracticeSolvedByUsersRepository practiceSolvedByUsersRepository;
+    private final SubjectRepository subjectRepository;
+    private final SubjectMapper subjectMapper;
     @Override
-    public ResponseDto<PracticeDto> addPractice(PracticeDto practiceDto) {
+    public ResponseDto<PracticeDto> addPractice(PracticeDto practiceDto, Integer subjectId) {
+        Optional<Subject> byId = subjectRepository.findById(subjectId);
+        if(byId.isEmpty()){
+            return ResponseDto.<PracticeDto>builder()
+                    .message("User not found")
+                    .code(NOT_FOUND_CODE)
+                    .build();
+        }
+        practiceDto.setSubjectDto(subjectMapper.toDto(byId.get()));
         practiceDto.setActivity(true);
         return ResponseDto.<PracticeDto>builder()
                 .data(practiceMapper.toDto(practiceRepository.save(practiceMapper.toEntity(practiceDto))))
@@ -41,12 +55,66 @@ public class PracticeServiceImpl implements PracticeService {
 
     @Override
     public ResponseDto<PracticeDto> updatePractice(PracticeDto practiceDto) {
-        return null;
+        if (practiceDto.getId() == null){
+            return ResponseDto.<PracticeDto>builder()
+                    .message(NULL_VALUE)
+                    .code(VALIDATION_ERROR_CODE)
+                    .data(practiceDto)
+                    .build();
+        }
+
+        Optional<Practice> practiceOptional = practiceRepository.findById(practiceDto.getId());
+
+        if (practiceOptional.isEmpty()){
+            return ResponseDto.<PracticeDto>builder()
+                    .message(NOT_FOUND)
+                    .code(NOT_FOUND_CODE)
+                    .data(practiceDto)
+                    .build();
+        }
+        Practice practice = practiceOptional.get();
+        if(!practice.getActivity()){
+            return ResponseDto.<PracticeDto>builder()
+                    .message(NOT_FOUND)
+                    .code(NOT_FOUND_CODE)
+                    .data(practiceDto)
+                    .build();
+        }
+        if (practiceDto.getPracticeName() != null){
+            practice.setPracticeName(practiceDto.getPracticeName());
+        }
+        if (practiceDto.getPracticeFileUrl() != null){
+            practice.setPracticeFileUrl(practiceDto.getPracticeFileUrl());
+        }
+        if (practiceDto.getPracticeDeadline() != null &&
+                LocalDateTime.now().isBefore(practiceDto.getPracticeDeadline()) &&
+                !practiceSolvedByUsersRepository.existsByPracticeId(practice.getId())){
+            practice.setPracticeDeadline(practiceDto.getPracticeDeadline());
+        }
+        if (practiceDto.getMaxGrade() != 0){
+            practice.setMaxGrade(practiceDto.getMaxGrade());
+        }
+
+        try {
+            practiceRepository.save(practice);
+
+            return ResponseDto.<PracticeDto>builder()
+                    .data(practiceMapper.toDto(practice))
+                    .success(true)
+                    .message(OK)
+                    .build();
+        }catch (Exception e){
+            return ResponseDto.<PracticeDto>builder()
+                    .data(practiceMapper.toDto(practice))
+                    .code(DATABASE_ERROR_CODE)
+                    .message(DATABASE_ERROR + e.getMessage())
+                    .build();
+        }
     }
 
     @Override
     public ResponseDto<PracticeDto> getPracticeById(Integer id) {
-        Optional<Practice> byId = practiceRepository.findById(id);
+        Optional<Practice> byId = practiceRepository.findByIdAndActivityIsTrue(id);
         if(byId.isEmpty()){
             return ResponseDto.<PracticeDto>builder()
                     .message(NOT_FOUND)
@@ -70,7 +138,7 @@ public class PracticeServiceImpl implements PracticeService {
 
     @Override
     public ResponseDto<Page<EntityModel<PracticeDto>>> getAllPractice(Integer page, Integer size) {
-        Long count = practiceRepository.count();
+        Long count = practiceRepository.countAllByActivityIsTrue();
         return ResponseDto.<Page<EntityModel<PracticeDto>>>builder()
                 .code(OK_CODE)
                 .message(OK)

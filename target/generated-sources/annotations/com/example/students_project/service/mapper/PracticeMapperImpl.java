@@ -10,7 +10,7 @@ import org.springframework.stereotype.Component;
 
 @Generated(
     value = "org.mapstruct.ap.MappingProcessor",
-    date = "2023-12-02T18:04:06+0500",
+    date = "2023-12-09T14:01:17+0500",
     comments = "version: 1.5.2.Final, compiler: javac, environment: Java 17.0.7 (Amazon.com Inc.)"
 )
 @Component
@@ -30,7 +30,6 @@ public class PracticeMapperImpl implements PracticeMapper {
         practiceDto.setPracticeFileUrl( e.getPracticeFileUrl() );
         practiceDto.setActivity( e.getActivity() );
         practiceDto.setMaxGrade( e.getMaxGrade() );
-        practiceDto.setSubject( e.getSubject() );
         List<PracticeSolvedByUsers> list = e.getPracticeSolvedByUsersList();
         if ( list != null ) {
             practiceDto.setPracticeSolvedByUsersList( new ArrayList<PracticeSolvedByUsers>( list ) );
@@ -53,7 +52,6 @@ public class PracticeMapperImpl implements PracticeMapper {
         practice.setPracticeFileUrl( d.getPracticeFileUrl() );
         practice.setActivity( d.getActivity() );
         practice.setMaxGrade( d.getMaxGrade() );
-        practice.setSubject( d.getSubject() );
         List<PracticeSolvedByUsers> list = d.getPracticeSolvedByUsersList();
         if ( list != null ) {
             practice.setPracticeSolvedByUsersList( new ArrayList<PracticeSolvedByUsers>( list ) );

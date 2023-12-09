@@ -8,7 +8,7 @@ import org.springframework.hateoas.EntityModel;
 import org.springframework.stereotype.Service;
 
 public interface PracticeSolvedByUsersService {
-    ResponseDto<PracticeSolvedByUsersDto> addPracticeSolvedByUsers(PracticeSolvedByUsersDto practiceSolvedByUsersDto);
+    ResponseDto<PracticeSolvedByUsersDto> addPracticeSolvedByUsers(PracticeSolvedByUsersDto practiceSolvedByUsersDto, Integer userId, Integer practiceId);
 
     ResponseDto<PracticeSolvedByUsersDto> updatePracticeSolvedByUsers(PracticeSolvedByUsersDto practiceSolvedByUsersDto);
 
@@ -17,4 +17,10 @@ public interface PracticeSolvedByUsersService {
     ResponseDto<Page<EntityModel<PracticeSolvedByUsersDto>>> getAllPracticeSolvedByUsers(Integer page, Integer size);
 
     ResponseDto<PracticeSolvedByUsersDto> deletePracticeSolvedByUsersByID(Integer id);
+
+    ResponseDto<Page<EntityModel<PracticeSolvedByUsersDto>>> getByPracticeId(Integer id, Integer page, Integer size);
+
+    ResponseDto<Page<EntityModel<PracticeSolvedByUsersDto>>> getByUserId(Integer id, Integer page, Integer size);
+
+    ResponseDto<PracticeSolvedByUsersDto> makeGrade(Integer id, Float grade);
 }

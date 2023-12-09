@@ -10,9 +10,12 @@ import io.jsonwebtoken.Jwts;
 import io.jsonwebtoken.SignatureAlgorithm;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
+import org.springframework.context.annotation.Bean;
 import org.springframework.stereotype.Component;
 
 import java.util.Date;
+import java.util.HashMap;
+import java.util.Map;
 import java.util.UUID;
 
 @Component
@@ -22,12 +25,15 @@ public class JwtService {
 
     @Autowired
     private Gson gson;
-    @Autowired
-    private UserSessionRepository userSessionRepository;
+//    @Autowired
+//    private UserSessionRepository userSessionRepository;
+
+    public static Map<String, UsersDto> redis = new HashMap<>();
 
     public String generateToken(UsersDto usersDto){
         String uuid = UUID.randomUUID().toString();
-        userSessionRepository.save(new UserSession(uuid, gson.toJson(usersDto)));
+//        userSessionRepository.save(new UserSession(uuid, gson.toJson(usersDto)));
+        redis.put(uuid, usersDto);
         return Jwts.builder()
                 .setExpiration(new Date(System.currentTimeMillis() + 1000 * 60 * 60 *2))
                 .setSubject(uuid)
@@ -45,7 +51,10 @@ public class JwtService {
     }
     public UsersDto getSubject(String token){
         String uuid = getClaims(token).getSubject();
-        return userSessionRepository.findById(uuid).map(s -> gson.fromJson(s.getUserinfo(), UsersDto.class))
-                .orElseThrow(()-> new JwtException("Token is expired"));
+//        return userSessionRepository.findById(uuid).map(s -> gson.fromJson(s.getUserinfo(), UsersDto.class))
+//                .orElseThrow(()-> new JwtException("Token is expired"));
+
+        return redis.get(uuid);
+
     }
 }

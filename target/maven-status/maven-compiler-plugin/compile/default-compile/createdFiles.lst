@@ -1,6 +1,8 @@
 com\example\students_project\config\LocalDateTimeSerializer.class
+com\example\students_project\dto\UsersDto$UsersDtoBuilder.class
 com\example\students_project\repository\UserRepository.class
 com\example\students_project\service\UsersService.class
+com\example\students_project\config\ExceptionHandlerResources.class
 com\example\students_project\config\LocalDateTimeDeserializer.class
 com\example\students_project\service\impl\PracticeSolvedByUsersServiceImpl.class
 com\example\students_project\rest\PracticeController.class
@@ -40,6 +42,7 @@ com\example\students_project\dto\ResponseDto$ResponseDtoBuilder.class
 com\example\students_project\config\ExceptionHandler.class
 com\example\students_project\StudentsProjectApplication.class
 com\example\students_project\rest\FileController.class
+com\example\students_project\dto\ErrorDto$ErrorDtoBuilder.class
 com\example\students_project\dto\FileDto$FileDtoBuilder.class
 com\example\students_project\security\UserRoles.class
 com\example\students_project\rest\SubjectController.class

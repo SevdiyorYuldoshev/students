@@ -7,7 +7,7 @@ import org.springframework.hateoas.EntityModel;
 import org.springframework.web.multipart.MultipartFile;
 
 public interface SubjectService {
-    ResponseDto<SubjectDto> addSubject(SubjectDto subjectDto);
+    ResponseDto<SubjectDto> addSubject(SubjectDto subjectDto, Integer userId);
 
     ResponseDto<SubjectDto> updateSubject(SubjectDto subjectDto);
 

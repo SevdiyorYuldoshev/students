@@ -12,7 +12,7 @@ import org.springframework.stereotype.Component;
 
 @Generated(
     value = "org.mapstruct.ap.MappingProcessor",
-    date = "2023-12-02T18:04:06+0500",
+    date = "2023-12-09T14:01:17+0500",
     comments = "version: 1.5.2.Final, compiler: javac, environment: Java 17.0.7 (Amazon.com Inc.)"
 )
 @Component
@@ -28,8 +28,8 @@ public class SubjectMapperImpl implements SubjectMapper {
 
         subjectDto.id( e.getId() );
         subjectDto.name( e.getName() );
+        subjectDto.lectureDocumentUrl( e.getLectureDocumentUrl() );
         subjectDto.activity( e.getActivity() );
-        subjectDto.users( e.getUsers() );
         subjectDto.practices( practiceListToPracticeDtoList( e.getPractices() ) );
 
         return subjectDto.build();
@@ -45,8 +45,8 @@ public class SubjectMapperImpl implements SubjectMapper {
 
         subject.setId( d.getId() );
         subject.setName( d.getName() );
+        subject.setLectureDocumentUrl( d.getLectureDocumentUrl() );
         subject.setActivity( d.getActivity() );
-        subject.setUsers( d.getUsers() );
         subject.setPractices( practiceDtoListToPracticeList( d.getPractices() ) );
 
         return subject;
@@ -65,7 +65,6 @@ public class SubjectMapperImpl implements SubjectMapper {
         practiceDto.setPracticeFileUrl( practice.getPracticeFileUrl() );
         practiceDto.setActivity( practice.getActivity() );
         practiceDto.setMaxGrade( practice.getMaxGrade() );
-        practiceDto.setSubject( practice.getSubject() );
         List<PracticeSolvedByUsers> list = practice.getPracticeSolvedByUsersList();
         if ( list != null ) {
             practiceDto.setPracticeSolvedByUsersList( new ArrayList<PracticeSolvedByUsers>( list ) );
@@ -100,7 +99,6 @@ public class SubjectMapperImpl implements SubjectMapper {
         practice.setPracticeFileUrl( practiceDto.getPracticeFileUrl() );
         practice.setActivity( practiceDto.getActivity() );
         practice.setMaxGrade( practiceDto.getMaxGrade() );
-        practice.setSubject( practiceDto.getSubject() );
         List<PracticeSolvedByUsers> list = practiceDto.getPracticeSolvedByUsersList();
         if ( list != null ) {
             practice.setPracticeSolvedByUsersList( new ArrayList<PracticeSolvedByUsers>( list ) );

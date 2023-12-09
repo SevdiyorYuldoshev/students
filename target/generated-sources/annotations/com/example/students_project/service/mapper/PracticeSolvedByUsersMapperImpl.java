@@ -7,7 +7,7 @@ import org.springframework.stereotype.Component;
 
 @Generated(
     value = "org.mapstruct.ap.MappingProcessor",
-    date = "2023-12-02T18:04:05+0500",
+    date = "2023-12-09T14:01:17+0500",
     comments = "version: 1.5.2.Final, compiler: javac, environment: Java 17.0.7 (Amazon.com Inc.)"
 )
 @Component
@@ -25,8 +25,6 @@ public class PracticeSolvedByUsersMapperImpl implements PracticeSolvedByUsersMap
         practiceSolvedByUsersDto.setGrade( e.getGrade() );
         practiceSolvedByUsersDto.setPercentage( e.getPercentage() );
         practiceSolvedByUsersDto.setAnswersFileUrl( e.getAnswersFileUrl() );
-        practiceSolvedByUsersDto.setUsers( e.getUsers() );
-        practiceSolvedByUsersDto.setPractice( e.getPractice() );
 
         return practiceSolvedByUsersDto;
     }
@@ -43,8 +41,6 @@ public class PracticeSolvedByUsersMapperImpl implements PracticeSolvedByUsersMap
         practiceSolvedByUsers.setGrade( d.getGrade() );
         practiceSolvedByUsers.setPercentage( d.getPercentage() );
         practiceSolvedByUsers.setAnswersFileUrl( d.getAnswersFileUrl() );
-        practiceSolvedByUsers.setUsers( d.getUsers() );
-        practiceSolvedByUsers.setPractice( d.getPractice() );
 
         return practiceSolvedByUsers;
     }

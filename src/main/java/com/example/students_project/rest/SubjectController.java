@@ -13,8 +13,8 @@ import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
 import org.springframework.data.domain.Page;
 import org.springframework.hateoas.EntityModel;
+import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.web.bind.annotation.*;
-import org.springframework.web.multipart.MultipartFile;
 
 @RestController
 @RequestMapping("/subject")
@@ -35,9 +35,11 @@ public class SubjectController {
                     @ApiResponse(responseCode = "400", description = "Bad request", content = @Content(mediaType = "application/json", schema = @Schema(implementation = ResponseDto.class)))
             }
     )
+    @PreAuthorize("hasAnyRole('ADMIN', 'SUPER_ADMIN')")
     @PostMapping
-    public ResponseDto<SubjectDto> addSubject(@Valid @RequestBody SubjectDto subjectDto){
-        return subjectService.addSubject(subjectDto);
+    public ResponseDto<SubjectDto> addSubject(@Valid @RequestBody SubjectDto subjectDto,
+                                              @RequestParam Integer userId){
+        return subjectService.addSubject(subjectDto, userId);
     }
 
     @Operation(
@@ -54,6 +56,7 @@ public class SubjectController {
                     @ApiResponse(responseCode = "404", description = "Subject not found", content = @Content(mediaType = "application/json", schema = @Schema(implementation = ResponseDto.class)))
             }
     )
+    @PreAuthorize("hasAnyRole('ADMIN', 'SUPER_ADMIN')")
     @PatchMapping
     public ResponseDto<SubjectDto> updateSubject(@RequestBody SubjectDto subjectDto){
         return subjectService.updateSubject(subjectDto);
@@ -70,6 +73,7 @@ public class SubjectController {
                     @ApiResponse(responseCode = "404", description = "Subject not found", content = @Content(mediaType = "application/json", schema = @Schema(implementation = ResponseDto.class)))
             }
     )
+    @PreAuthorize("hasAnyRole('USER', 'ADMIN', 'SUPER_ADMIN')")
     @GetMapping("/{id}")
     public ResponseDto<SubjectDto> getSubjectById(@PathVariable Integer id){
         return subjectService.getSubjectById(id);
@@ -87,6 +91,7 @@ public class SubjectController {
                     @ApiResponse(responseCode = "400", description = "Bad request", content = @Content(mediaType = "application/json", schema = @Schema(implementation = ResponseDto.class)))
             }
     )
+    @PreAuthorize("hasAnyRole('USER', 'ADMIN', 'SUPER_ADMIN')")
     @GetMapping("/all")
     public ResponseDto<Page<EntityModel<SubjectDto>>> getAllSubject(@RequestParam(defaultValue = "0") Integer page,
                                                                     @RequestParam(defaultValue = "10") Integer size){
@@ -104,6 +109,7 @@ public class SubjectController {
                     @ApiResponse(responseCode = "404", description = "Subject not found", content = @Content(mediaType = "application/json", schema = @Schema(implementation = ResponseDto.class)))
             }
     )
+    @PreAuthorize("hasAnyRole('ADMIN', 'SUPER_ADMIN')")
     @DeleteMapping
     public ResponseDto<SubjectDto> deleteSubjectByID(@RequestParam Integer id){
         return subjectService.deleteSubjectById(id);
@@ -122,6 +128,7 @@ public class SubjectController {
                     @ApiResponse(responseCode = "404", description = "User not found", content = @Content(mediaType = "application/json", schema = @Schema(implementation = ResponseDto.class)))
             }
     )
+    @PreAuthorize("hasAnyRole('ADMIN', 'SUPER_ADMIN')")
     @GetMapping("/by-user/{id}")
     public ResponseDto<Page<EntityModel<SubjectDto>>> getSubjectByUserId(@PathVariable Integer id,
                                                                          @RequestParam(defaultValue = "0") Integer page,

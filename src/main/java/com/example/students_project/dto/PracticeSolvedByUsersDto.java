@@ -2,6 +2,7 @@ package com.example.students_project.dto;
 
 import com.example.students_project.entity.Practice;
 import com.example.students_project.entity.Users;
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.Entity;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
@@ -14,9 +15,11 @@ import lombok.Setter;
 @NoArgsConstructor
 public class PracticeSolvedByUsersDto {
     private Integer id;
-    private Float grade;
-    private Float percentage;
+    private float grade;
+    private float percentage;
     private String answersFileUrl;
-    private Users users;
-    private Practice practice;
+    @JsonIgnore
+    private UsersDto usersDto;
+    @JsonIgnore
+    private PracticeDto practiceDto;
 }

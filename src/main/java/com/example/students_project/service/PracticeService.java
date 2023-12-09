@@ -6,7 +6,7 @@ import org.springframework.data.domain.Page;
 import org.springframework.hateoas.EntityModel;
 
 public interface PracticeService {
-    ResponseDto<PracticeDto> addPractice(PracticeDto practiceDto);
+    ResponseDto<PracticeDto> addPractice(PracticeDto practiceDto, Integer subjectId);
 
     ResponseDto<PracticeDto> updatePractice(PracticeDto practiceDto);
 

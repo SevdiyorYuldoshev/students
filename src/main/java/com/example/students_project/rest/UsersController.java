@@ -1,5 +1,6 @@
 package com.example.students_project.rest;
 
+import com.example.students_project.dto.ImageDto;
 import com.example.students_project.dto.LoginDto;
 import com.example.students_project.dto.ResponseDto;
 import com.example.students_project.dto.UsersDto;
@@ -53,7 +54,7 @@ public class UsersController {
             requestBody = @io.swagger.v3.oas.annotations.parameters.RequestBody(
                     description = "User object with updated details",
                     required = true,
-                    content = @Content(mediaType = "application/json", schema = @Schema(implementation = UsersDto.class))
+                    content = @Content(mediaType = "application/json", schema = @Schema(implementation = UsersDto.class, not = ImageDto.class))
             ),
             responses = {
                     @ApiResponse(responseCode = "200", description = "User updated successfully", content = @Content(mediaType = "application/json", schema = @Schema(implementation = ResponseDto.class))),
@@ -95,6 +96,7 @@ public class UsersController {
                     @ApiResponse(responseCode = "400", description = "Bad request", content = @Content(mediaType = "application/json", schema = @Schema(implementation = ResponseDto.class)))
             }
     )
+    @PreAuthorize("hasAnyRole('ADMIN', 'SUPER_ADMIN')")
     @GetMapping("/all-user")
     public ResponseDto<Page<EntityModel<UsersDto>>> getAllUsers(@RequestParam(defaultValue = "0") Integer page,
                                                                 @RequestParam(defaultValue = "10") Integer size){
@@ -111,6 +113,7 @@ public class UsersController {
                     @ApiResponse(responseCode = "404", description = "User not found", content = @Content(mediaType = "application/json", schema = @Schema(implementation = ResponseDto.class)))
             }
     )
+    @PreAuthorize("hasAnyRole('ADMIN', 'SUPER_ADMIN')")
     @DeleteMapping
     public ResponseDto<UsersDto> deleteUser(@RequestParam Integer id){
         return userService.deleteUser(id);
@@ -136,9 +139,6 @@ public class UsersController {
         ResponseDto<String> response = userService.loginUser(loginDto);
         response.add(link);
 
-        Method getUserById = UsersController.class
-                .getDeclaredMethod("getUserById", Integer.class);
-
         return response;
     }
 
@@ -156,10 +156,29 @@ public class UsersController {
                     @ApiResponse(responseCode = "401", description = "Unauthorized", content = @Content(mediaType = "application/json", schema = @Schema(implementation = ResponseDto.class)))
             }
     )
+    @PreAuthorize("hasAnyRole('USER','ADMIN', 'SUPER_ADMIN')")
     @PatchMapping("/update-password")
     public ResponseDto<UsersDto> updatePassword(@RequestParam String username,
                                              @RequestParam String password,
                                              @RequestParam String newPassword){
         return userService.updatePassword(username, password, newPassword);
+    }
+
+    @Operation(
+            summary = "Create admin user",
+            description = "This endpoint allows authorized users to promote an existing user to an admin role.",
+            parameters = {
+                    @Parameter(name = "id", description = "ID of the user to promote to admin", required = true, example = "123")
+            },
+            responses = {
+                    @ApiResponse(responseCode = "200", description = "Admin user created successfully", content = @Content(mediaType = "application/json", schema = @Schema(implementation = ResponseDto.class))),
+                    @ApiResponse(responseCode = "400", description = "Bad request", content = @Content(mediaType = "application/json", schema = @Schema(implementation = ResponseDto.class))),
+                    @ApiResponse(responseCode = "404", description = "User not found", content = @Content(mediaType = "application/json", schema = @Schema(implementation = ResponseDto.class)))
+            }
+    )
+    @PreAuthorize("hasAnyRole('SUPER_ADMIN')")
+    @PatchMapping("/create-admin")
+    public ResponseDto<UsersDto> createAdmin(@RequestParam Integer id){
+        return userService.createAdmin(id);
     }
 }

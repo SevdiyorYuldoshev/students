@@ -5,10 +5,12 @@ import com.google.gson.GsonBuilder;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.data.redis.repository.configuration.EnableRedisRepositories;
 
 import java.time.LocalDateTime;
 
 @Configuration
+@EnableRedisRepositories
 public class AppConfig {
     @Autowired
     private LocalDateTimeDeserializer localDateTimeDeserializer;

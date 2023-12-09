@@ -1,9 +1,6 @@
 package com.example.students_project.entity;
 
-import com.fasterxml.jackson.annotation.JsonIdentityInfo;
-import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
-import com.fasterxml.jackson.annotation.JsonManagedReference;
-import com.fasterxml.jackson.annotation.ObjectIdGenerators;
+import com.fasterxml.jackson.annotation.*;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
@@ -43,9 +40,8 @@ public class Users {
     private List<Subject> subjects;
     @OneToMany(mappedBy = "users")
     private List<PracticeSolvedByUsers> practiceSolvedByUsersList;
-    @OneToOne(mappedBy = "users", cascade = CascadeType.ALL, fetch = FetchType.LAZY)
+    @OneToOne(mappedBy = "users")
     @JoinColumn(name = "image_id")
-//    @JsonManagedReference
     private Image image;
 
 }

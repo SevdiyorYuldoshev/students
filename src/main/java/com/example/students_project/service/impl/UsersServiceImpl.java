@@ -12,6 +12,7 @@ import com.example.students_project.service.UsersService;
 import com.example.students_project.service.mapper.ImageMapper;
 import com.example.students_project.service.mapper.UsersMapper;
 import lombok.RequiredArgsConstructor;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
 import org.springframework.hateoas.EntityModel;
@@ -132,7 +133,7 @@ public class UsersServiceImpl implements UsersService {
 
     @Override
     public ResponseDto<UsersDto> getUserById(Integer id) {
-        return usersRepository.findById(id)
+        return usersRepository.findByIdAndActivityEquals(id, 0)
                 .map(u -> ResponseDto.<UsersDto>builder()
                         .success(true)
                         .message(OK)
@@ -194,7 +195,6 @@ public class UsersServiceImpl implements UsersService {
     public ResponseDto<String> loginUser(LoginDto loginDto) {
         UsersDto users = loadUserByUsername(loginDto.getUsername());
         if (!encoder.matches(loginDto.getPassword(),users.getPassword())){
-//        if(!loginDto.getUsername().equals(loginDto.getUsername())) {
             return ResponseDto.<String>builder()
                     .message("Password is not correct "+users.getPassword())
                     .code(VALIDATION_ERROR_CODE)
@@ -243,6 +243,26 @@ public class UsersServiceImpl implements UsersService {
                 .code(OK_CODE)
                 .success(true)
                 .data(usersMapper.toDto(usersRepository.save(firstByUsername)))
+                .build();
+    }
+
+    @Override
+    public ResponseDto<UsersDto> createAdmin(Integer id) {
+        Optional<Users> byId = usersRepository.findById(id);
+        if(byId.isEmpty()){
+            return ResponseDto.<UsersDto>builder()
+                    .code(NOT_FOUND_CODE)
+                    .message(NOT_FOUND)
+                    .build();
+        }
+        Users users = byId.get();
+        users.setRole("ADMIN");
+        usersRepository.save(users);
+        return ResponseDto.<UsersDto>builder()
+                .message(OK)
+                .success(true)
+                .code(OK_CODE)
+                .data(usersMapper.toDto(users))
                 .build();
     }
 }

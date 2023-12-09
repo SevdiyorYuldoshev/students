@@ -1,11 +1,11 @@
 package com.example.students_project.dto;
 
-import com.example.students_project.entity.PracticeSolvedByUsers;
-import com.example.students_project.entity.Subject;
 import com.example.students_project.security.UserRoles;
-import jakarta.validation.constraints.*;
+import com.fasterxml.jackson.annotation.JsonIgnore;
+import jakarta.validation.constraints.Email;
+import jakarta.validation.constraints.NotEmpty;
+import jakarta.validation.constraints.NotNull;
 import lombok.*;
-import org.hibernate.validator.constraints.Length;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
@@ -18,6 +18,7 @@ import java.util.List;
 @Setter
 @AllArgsConstructor
 @NoArgsConstructor
+@Builder
 public class UsersDto implements UserDetails {
     private Integer id;
     private String firstname;
@@ -41,8 +42,11 @@ public class UsersDto implements UserDetails {
      * <p>  0 - OK </p>
      */
     private int activity;
+    @JsonIgnore
     private List<SubjectDto> subjects;
+    @JsonIgnore
     private List<PracticeSolvedByUsersDto> practiceSolvedByUsersList;
+    @JsonIgnore
     private ImageDto imageDto;
 
     @Override

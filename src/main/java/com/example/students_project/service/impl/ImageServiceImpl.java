@@ -10,6 +10,7 @@ import com.example.students_project.repository.ImageRepository;
 import com.example.students_project.repository.UserRepository;
 import com.example.students_project.service.ImageService;
 import com.example.students_project.service.mapper.ImageMapper;
+import com.example.students_project.service.mapper.UsersMapper;
 import lombok.RequiredArgsConstructor;
 import org.apache.catalina.User;
 import org.springframework.core.io.Resource;
@@ -34,6 +35,7 @@ public class ImageServiceImpl implements ImageService {
     private final ImageRepository imageRepository;
     private final FileDownload fileDownload;
     private final UserRepository userRepository;
+    private final UsersMapper usersMapper;
     @Override
     public ResponseDto<ImageDto> uploadImage(MultipartFile image, Integer user_id) {
         ImageDto imageDto = imageMapper.toDto(imageRepository.findFirstByUsers_Id(user_id));
@@ -48,7 +50,7 @@ public class ImageServiceImpl implements ImageService {
             Users users = usersOptional.get();
             imageDto = ImageDto.builder()
                     .createdAt(LocalDateTime.now())
-                    .users(users)
+                    .usersDto(usersMapper.toDto(users))
                     .url(fileUpload.uploadFile(image, "image"))
                     .build();
         }

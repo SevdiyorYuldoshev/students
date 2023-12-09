@@ -1,9 +1,6 @@
 package com.example.students_project.entity;
 
-import com.fasterxml.jackson.annotation.JsonBackReference;
-import com.fasterxml.jackson.annotation.JsonIdentityInfo;
-import com.fasterxml.jackson.annotation.JsonManagedReference;
-import com.fasterxml.jackson.annotation.ObjectIdGenerators;
+import com.fasterxml.jackson.annotation.*;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
@@ -25,7 +22,7 @@ public class Subject {
     private Integer id;
     private String name;
     @Column(unique = true)
-    private String lecture_document_url;
+    private String lectureDocumentUrl;
     private Boolean activity;
     @ManyToOne
     @JoinColumn(name = "users_id")

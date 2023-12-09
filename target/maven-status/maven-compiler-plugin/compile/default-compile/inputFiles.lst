@@ -15,6 +15,7 @@ D:\Java\students_project\src\main\java\com\example\students_project\config\Swagg
 D:\Java\students_project\src\main\java\com\example\students_project\dto\ImageDto.java
 D:\Java\students_project\src\main\java\com\example\students_project\dto\PracticeDto.java
 D:\Java\students_project\src\main\java\com\example\students_project\service\PracticeSolvedByUsersService.java
+D:\Java\students_project\src\main\java\com\example\students_project\config\ExceptionHandlerResources.java
 D:\Java\students_project\src\main\java\com\example\students_project\rest\UsersController.java
 D:\Java\students_project\src\main\java\com\example\students_project\dto\SubjectDto.java
 D:\Java\students_project\src\main\java\com\example\students_project\service\impl\ImageServiceImpl.java

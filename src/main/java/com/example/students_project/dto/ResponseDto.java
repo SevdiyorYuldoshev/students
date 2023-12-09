@@ -1,6 +1,8 @@
 package com.example.students_project.dto;
 
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import lombok.*;
 import org.springframework.hateoas.RepresentationModel;
 
@@ -11,6 +13,7 @@ import java.util.List;
 @AllArgsConstructor
 @NoArgsConstructor
 @Builder
+@JsonIgnoreProperties(value = "_links", allowSetters = true)
 public class ResponseDto<T> extends RepresentationModel<ResponseDto<T>> {
     /**
      * Response code for defining type of error:

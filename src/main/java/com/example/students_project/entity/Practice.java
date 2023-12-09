@@ -1,9 +1,6 @@
 package com.example.students_project.entity;
 
-import com.fasterxml.jackson.annotation.JsonBackReference;
-import com.fasterxml.jackson.annotation.JsonIdentityInfo;
-import com.fasterxml.jackson.annotation.JsonManagedReference;
-import com.fasterxml.jackson.annotation.ObjectIdGenerators;
+import com.fasterxml.jackson.annotation.*;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
@@ -25,11 +22,10 @@ public class Practice {
     @SequenceGenerator(name = "prac_id_seq", sequenceName = "prac_id_seq", allocationSize = 1)
     private Integer id;
     private String practiceName;
-    @Column(nullable = false)
     private LocalDateTime practiceDeadline;
     private String practiceFileUrl;
     private Boolean activity;
-    private Integer maxGrade;
+    private int maxGrade;
     @ManyToOne
     @JoinColumn(name = "subject_id")
 //    @JsonBackReference

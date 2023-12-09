@@ -4,7 +4,140 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5dcf92d4-8d94-4b12-bc95-ffc5fb4ef22f" name="Changes" comment=".jar file" />
+    <list default="true" id="5dcf92d4-8d94-4b12-bc95-ffc5fb4ef22f" name="Changes" comment=".jar file">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/students_project/config/ExceptionHandlerResources.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/96cc8741-bf59-422b-b347-579921ad05a8.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/96cc8741-bf59-422b-b347-579921ad05a8.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/96cc8741-bf59-422b-b347-579921ad05a8/storage_v2/_src_/database/tatu.rjU2AA/schema/public.abK9xQ.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/96cc8741-bf59-422b-b347-579921ad05a8/storage_v2/_src_/database/tatu.rjU2AA/schema/public.abK9xQ.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/23/11/27/1701081143864.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/students_project/StudentsProjectApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/students_project/StudentsProjectApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/students_project/config/AppConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/students_project/config/AppConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/students_project/config/SecurityConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/students_project/config/SecurityConfiguration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/students_project/config/SwaggerConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/students_project/config/SwaggerConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/students_project/dto/ErrorDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/students_project/dto/ErrorDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/students_project/dto/ImageDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/students_project/dto/ImageDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/students_project/dto/PracticeDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/students_project/dto/PracticeDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/students_project/dto/PracticeSolvedByUsersDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/students_project/dto/PracticeSolvedByUsersDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/students_project/dto/ResponseDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/students_project/dto/ResponseDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/students_project/dto/SubjectDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/students_project/dto/SubjectDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/students_project/dto/UsersDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/students_project/dto/UsersDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/students_project/entity/Image.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/students_project/entity/Image.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/students_project/entity/Practice.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/students_project/entity/Practice.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/students_project/entity/PracticeSolvedByUsers.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/students_project/entity/PracticeSolvedByUsers.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/students_project/entity/Subject.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/students_project/entity/Subject.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/students_project/entity/Users.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/students_project/entity/Users.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/students_project/repository/PracticeRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/students_project/repository/PracticeRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/students_project/repository/PracticeSolvedByUsersRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/students_project/repository/PracticeSolvedByUsersRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/students_project/repository/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/students_project/repository/UserRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/students_project/rest/FileController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/students_project/rest/FileController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/students_project/rest/ImageController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/students_project/rest/ImageController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/students_project/rest/PracticeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/students_project/rest/PracticeController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/students_project/rest/PracticeSolvedByUsersController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/students_project/rest/PracticeSolvedByUsersController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/students_project/rest/SubjectController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/students_project/rest/SubjectController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/students_project/rest/UsersController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/students_project/rest/UsersController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/students_project/security/JwtFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/students_project/security/JwtFilter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/students_project/security/JwtService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/students_project/security/JwtService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/students_project/service/FileService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/students_project/service/FileService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/students_project/service/PracticeService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/students_project/service/PracticeService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/students_project/service/PracticeSolvedByUsersService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/students_project/service/PracticeSolvedByUsersService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/students_project/service/SubjectService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/students_project/service/SubjectService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/students_project/service/UsersService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/students_project/service/UsersService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/students_project/service/impl/FileServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/students_project/service/impl/FileServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/students_project/service/impl/ImageServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/students_project/service/impl/ImageServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/students_project/service/impl/PracticeServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/students_project/service/impl/PracticeServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/students_project/service/impl/PracticeSolvedByUsersServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/students_project/service/impl/PracticeSolvedByUsersServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/students_project/service/impl/SubjectServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/students_project/service/impl/SubjectServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/students_project/service/impl/UsersServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/students_project/service/impl/UsersServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/students_project/StudentsProjectApplication.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/students_project/config/AppConfig.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/students_project/config/ExceptionHandler.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/students_project/config/LocalDateTimeDeserializer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/students_project/config/LocalDateTimeSerializer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/students_project/config/SecurityConfiguration.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/students_project/config/SwaggerConfig.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/students_project/dto/ErrorDto.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/students_project/dto/FileDto$FileDtoBuilder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/students_project/dto/FileDto.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/students_project/dto/ImageDto$ImageDtoBuilder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/students_project/dto/ImageDto.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/students_project/dto/LoginDto$LoginDtoBuilder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/students_project/dto/LoginDto.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/students_project/dto/PracticeDto.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/students_project/dto/PracticeSolvedByUsersDto.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/students_project/dto/ResponseDto$ResponseDtoBuilder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/students_project/dto/ResponseDto.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/students_project/dto/SubjectDto$SubjectDtoBuilder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/students_project/dto/SubjectDto.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/students_project/dto/UploadDto.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/students_project/dto/UsersDto.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/students_project/entity/Image.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/students_project/entity/Practice.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/students_project/entity/PracticeSolvedByUsers.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/students_project/entity/Subject.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/students_project/entity/UserSession.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/students_project/entity/Users.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/students_project/io/FileDownload.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/students_project/io/FileUpload.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/students_project/repository/ImageRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/students_project/repository/PracticeRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/students_project/repository/PracticeSolvedByUsersRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/students_project/repository/SubjectRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/students_project/repository/UserRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/students_project/repository/UserSessionRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/students_project/rest/FileController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/students_project/rest/ImageController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/students_project/rest/PracticeController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/students_project/rest/PracticeSolvedByUsersController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/students_project/rest/SubjectController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/students_project/rest/UsersController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/students_project/security/JwtFilter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/students_project/security/JwtService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/students_project/security/UserAuthorities.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/students_project/security/UserRoles.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/students_project/service/FileService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/students_project/service/ImageService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/students_project/service/PracticeService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/students_project/service/PracticeSolvedByUsersService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/students_project/service/SubjectService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/students_project/service/UsersService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/students_project/service/impl/FileServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/students_project/service/impl/ImageServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/students_project/service/impl/PracticeServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/students_project/service/impl/PracticeSolvedByUsersServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/students_project/service/impl/SubjectServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/students_project/service/impl/UsersServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/students_project/service/mapper/CommonMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/students_project/service/mapper/ImageMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/students_project/service/mapper/ImageMapperImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/students_project/service/mapper/PracticeMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/students_project/service/mapper/PracticeMapperImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/students_project/service/mapper/PracticeSolvedByUsersMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/students_project/service/mapper/PracticeSolvedByUsersMapperImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/students_project/service/mapper/SubjectMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/students_project/service/mapper/SubjectMapperImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/students_project/service/mapper/UsersMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/students_project/service/mapper/UsersMapperImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/students_project/service/validation/StatusCode.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/students_project/service/validation/StatusMessage.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/generated-sources/annotations/com/example/students_project/service/mapper/ImageMapperImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/generated-sources/annotations/com/example/students_project/service/mapper/PracticeMapperImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/generated-sources/annotations/com/example/students_project/service/mapper/PracticeSolvedByUsersMapperImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/generated-sources/annotations/com/example/students_project/service/mapper/SubjectMapperImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/generated-sources/annotations/com/example/students_project/service/mapper/UsersMapperImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/students_project-0.0.1-SNAPSHOT.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/students_project-0.0.1-SNAPSHOT.jar.original" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/example/students_project/StudentsProjectApplicationTests.class" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -14,8 +147,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Interface" />
-        <option value="Class" />
         <option value="Dockerfile" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -39,31 +172,34 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
-    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
-    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
-    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/Java/students_project&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
-    &quot;spring.configuration.checksum&quot;: &quot;8b5e753b822887968236994c91b7ff02&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "D:/Java/downloader-main",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "spring.configuration.checksum": "8b5e753b822887968236994c91b7ff02",
+    "vue.rearranger.settings.migration": "true"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;DatabaseDriversLRU&quot;: [
-      &quot;postgresql&quot;
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "postgresql"
     ]
   }
-}</component>
+}]]></component>
+  <component name="ReactorSettings">
+    <option name="notificationShown" value="true" />
+  </component>
   <component name="RecentsManager">
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="com.example.students_project.service.mapper" />
@@ -75,14 +211,20 @@
       <command value="mvn clean package -DskipTests" />
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Spring Boot.StudentsProjectApplication">
+    <configuration name="generated-requests | #25" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$APPLICATION_CONFIG_DIR$/scratches/generated-requests.http" index="25" requestIdentifier="#25" runType="Run single request">
+      <method v="2" />
+    </configuration>
+    <configuration name="generated-requests | #26" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$APPLICATION_CONFIG_DIR$/scratches/generated-requests.http" index="26" requestIdentifier="#26" runType="Run single request">
+      <method v="2" />
+    </configuration>
     <configuration name="StudentsProjectApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <envs>
         <env name="driver" value="org.postgresql.Driver" />
         <env name="database_username" value="postgres" />
         <env name="database_password" value="ROOT" />
         <env name="database_url" value="jdbc:postgresql://localhost:5432/tatu" />
-        <env name="redis_url" value="redis://localhost:6379" />
+        <env name="redis_url" value="redis://10.206.226.243:6378" />
       </envs>
       <module name="students_project" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.students_project.StudentsProjectApplication" />
@@ -90,8 +232,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <list>
+      <item itemvalue="HTTP Request.generated-requests | #25" />
+      <item itemvalue="HTTP Request.generated-requests | #26" />
+      <item itemvalue="Spring Boot.StudentsProjectApplication" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="HTTP Request.generated-requests | #25" />
+        <item itemvalue="HTTP Request.generated-requests | #26" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="SpringBeansView">
+    <option name="beanDetailsProportion" value="0.3" />
+  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="5dcf92d4-8d94-4b12-bc95-ffc5fb4ef22f" name="Changes" comment="" />
@@ -117,7 +273,14 @@
       <workItem from="1701277381564" duration="6664000" />
       <workItem from="1701320362840" duration="230000" />
       <workItem from="1701363704836" duration="1781000" />
-      <workItem from="1701511741343" duration="9213000" />
+      <workItem from="1701511741343" duration="9769000" />
+      <workItem from="1701523132535" duration="988000" />
+      <workItem from="1701880282238" duration="12088000" />
+      <workItem from="1701930953718" duration="4109000" />
+      <workItem from="1701940045571" duration="8618000" />
+      <workItem from="1701961433970" duration="4152000" />
+      <workItem from="1701966457231" duration="8716000" />
+      <workItem from="1702008364836" duration="30630000" />
     </task>
     <task id="LOCAL-00001" summary="Kodlar qo'shildi">
       <created>1701512414429</created>
@@ -161,7 +324,14 @@
       <option name="project" value="LOCAL" />
       <updated>1701522276642</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary=".jar file">
+      <created>1701522566159</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1701522566159</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -184,5 +354,15 @@
     <MESSAGE value="ignore papka qo'shildi" />
     <MESSAGE value=".jar file" />
     <option name="LAST_COMMIT_MESSAGE" value=".jar file" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="java.lang.IllegalArgumentException" package="java.lang" />
+          <option name="timeStamp" value="2" />
+        </breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

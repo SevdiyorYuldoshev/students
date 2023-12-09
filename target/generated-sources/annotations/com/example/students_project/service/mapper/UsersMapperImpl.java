@@ -15,7 +15,7 @@ import org.springframework.stereotype.Component;
 
 @Generated(
     value = "org.mapstruct.ap.MappingProcessor",
-    date = "2023-12-02T18:04:06+0500",
+    date = "2023-12-09T14:01:17+0500",
     comments = "version: 1.5.2.Final, compiler: javac, environment: Java 17.0.7 (Amazon.com Inc.)"
 )
 @Component
@@ -27,23 +27,23 @@ public class UsersMapperImpl implements UsersMapper {
             return null;
         }
 
-        UsersDto usersDto = new UsersDto();
+        UsersDto.UsersDtoBuilder usersDto = UsersDto.builder();
 
-        usersDto.setId( e.getId() );
-        usersDto.setFirstname( e.getFirstname() );
-        usersDto.setLastname( e.getLastname() );
-        usersDto.setUsername( e.getUsername() );
-        usersDto.setPassword( e.getPassword() );
-        usersDto.setEmail( e.getEmail() );
-        usersDto.setPhoneNumber( e.getPhoneNumber() );
-        usersDto.setRole( e.getRole() );
-        usersDto.setCreatedAt( e.getCreatedAt() );
-        usersDto.setDescription( e.getDescription() );
-        usersDto.setActivity( e.getActivity() );
-        usersDto.setSubjects( subjectListToSubjectDtoList( e.getSubjects() ) );
-        usersDto.setPracticeSolvedByUsersList( practiceSolvedByUsersListToPracticeSolvedByUsersDtoList( e.getPracticeSolvedByUsersList() ) );
+        usersDto.id( e.getId() );
+        usersDto.firstname( e.getFirstname() );
+        usersDto.lastname( e.getLastname() );
+        usersDto.username( e.getUsername() );
+        usersDto.password( e.getPassword() );
+        usersDto.email( e.getEmail() );
+        usersDto.phoneNumber( e.getPhoneNumber() );
+        usersDto.role( e.getRole() );
+        usersDto.createdAt( e.getCreatedAt() );
+        usersDto.description( e.getDescription() );
+        usersDto.activity( e.getActivity() );
+        usersDto.subjects( subjectListToSubjectDtoList( e.getSubjects() ) );
+        usersDto.practiceSolvedByUsersList( practiceSolvedByUsersListToPracticeSolvedByUsersDtoList( e.getPracticeSolvedByUsersList() ) );
 
-        return usersDto;
+        return usersDto.build();
     }
 
     @Override
@@ -84,7 +84,6 @@ public class UsersMapperImpl implements UsersMapper {
         practiceDto.setPracticeFileUrl( practice.getPracticeFileUrl() );
         practiceDto.setActivity( practice.getActivity() );
         practiceDto.setMaxGrade( practice.getMaxGrade() );
-        practiceDto.setSubject( practice.getSubject() );
         List<PracticeSolvedByUsers> list = practice.getPracticeSolvedByUsersList();
         if ( list != null ) {
             practiceDto.setPracticeSolvedByUsersList( new ArrayList<PracticeSolvedByUsers>( list ) );
@@ -115,8 +114,8 @@ public class UsersMapperImpl implements UsersMapper {
 
         subjectDto.id( subject.getId() );
         subjectDto.name( subject.getName() );
+        subjectDto.lectureDocumentUrl( subject.getLectureDocumentUrl() );
         subjectDto.activity( subject.getActivity() );
-        subjectDto.users( subject.getUsers() );
         subjectDto.practices( practiceListToPracticeDtoList( subject.getPractices() ) );
 
         return subjectDto.build();
@@ -146,8 +145,6 @@ public class UsersMapperImpl implements UsersMapper {
         practiceSolvedByUsersDto.setGrade( practiceSolvedByUsers.getGrade() );
         practiceSolvedByUsersDto.setPercentage( practiceSolvedByUsers.getPercentage() );
         practiceSolvedByUsersDto.setAnswersFileUrl( practiceSolvedByUsers.getAnswersFileUrl() );
-        practiceSolvedByUsersDto.setUsers( practiceSolvedByUsers.getUsers() );
-        practiceSolvedByUsersDto.setPractice( practiceSolvedByUsers.getPractice() );
 
         return practiceSolvedByUsersDto;
     }
@@ -178,7 +175,6 @@ public class UsersMapperImpl implements UsersMapper {
         practice.setPracticeFileUrl( practiceDto.getPracticeFileUrl() );
         practice.setActivity( practiceDto.getActivity() );
         practice.setMaxGrade( practiceDto.getMaxGrade() );
-        practice.setSubject( practiceDto.getSubject() );
         List<PracticeSolvedByUsers> list = practiceDto.getPracticeSolvedByUsersList();
         if ( list != null ) {
             practice.setPracticeSolvedByUsersList( new ArrayList<PracticeSolvedByUsers>( list ) );
@@ -209,8 +205,8 @@ public class UsersMapperImpl implements UsersMapper {
 
         subject.setId( subjectDto.getId() );
         subject.setName( subjectDto.getName() );
+        subject.setLectureDocumentUrl( subjectDto.getLectureDocumentUrl() );
         subject.setActivity( subjectDto.getActivity() );
-        subject.setUsers( subjectDto.getUsers() );
         subject.setPractices( practiceDtoListToPracticeList( subjectDto.getPractices() ) );
 
         return subject;
@@ -240,8 +236,6 @@ public class UsersMapperImpl implements UsersMapper {
         practiceSolvedByUsers.setGrade( practiceSolvedByUsersDto.getGrade() );
         practiceSolvedByUsers.setPercentage( practiceSolvedByUsersDto.getPercentage() );
         practiceSolvedByUsers.setAnswersFileUrl( practiceSolvedByUsersDto.getAnswersFileUrl() );
-        practiceSolvedByUsers.setUsers( practiceSolvedByUsersDto.getUsers() );
-        practiceSolvedByUsers.setPractice( practiceSolvedByUsersDto.getPractice() );
 
         return practiceSolvedByUsers;
     }

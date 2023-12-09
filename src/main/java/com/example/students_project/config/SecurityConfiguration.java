@@ -4,20 +4,17 @@ import com.example.students_project.dto.ResponseDto;
 import com.example.students_project.security.JwtFilter;
 import com.example.students_project.service.UsersService;
 import com.google.gson.Gson;
-import io.swagger.v3.oas.annotations.OpenAPIDefinition;
-import io.swagger.v3.oas.annotations.enums.SecuritySchemeIn;
-import io.swagger.v3.oas.annotations.enums.SecuritySchemeType;
-import io.swagger.v3.oas.annotations.info.Contact;
-import io.swagger.v3.oas.annotations.info.Info;
-import io.swagger.v3.oas.annotations.security.SecurityScheme;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.beans.factory.annotation.Value;
-import org.springframework.context.annotation.Bean;
-import org.springframework.context.annotation.Configuration;
-import org.springframework.context.annotation.Lazy;
+import org.springframework.context.annotation.*;
 import org.springframework.http.HttpMethod;
+import org.springframework.http.HttpStatus;
 import org.springframework.jdbc.datasource.SimpleDriverDataSource;
 import org.springframework.security.authentication.AuthenticationProvider;
+import org.springframework.security.authentication.BadCredentialsException;
+import org.springframework.security.authentication.DisabledException;
+import org.springframework.security.authentication.LockedException;
 import org.springframework.security.authentication.dao.DaoAuthenticationProvider;
 import org.springframework.security.config.annotation.authentication.builders.AuthenticationManagerBuilder;
 import org.springframework.security.config.annotation.method.configuration.EnableMethodSecurity;
@@ -27,6 +24,7 @@ import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.security.web.AuthenticationEntryPoint;
 import org.springframework.security.web.SecurityFilterChain;
+import org.springframework.security.web.access.AccessDeniedHandler;
 import org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter;
 import org.springframework.web.cors.CorsConfiguration;
 import org.springframework.web.cors.CorsConfigurationSource;
@@ -36,8 +34,7 @@ import org.springframework.web.cors.UrlBasedCorsConfigurationSource;
 import javax.sql.DataSource;
 
 import org.postgresql.Driver;
-
-import static com.example.students_project.service.validation.StatusCode.*;
+import org.springframework.web.servlet.HandlerExceptionResolver;
 
 @Configuration
 @EnableWebSecurity
@@ -52,10 +49,20 @@ public class SecurityConfiguration {
     @Autowired
     @Lazy
     private UsersService usersService;
-    @Autowired
-    private JwtFilter jwtFilter;
+//    @Autowired
+//    private JwtFilter jwtFilter;
     @Autowired
     private Gson gson;
+
+    @Autowired
+    @Qualifier("handlerExceptionResolver")
+    private HandlerExceptionResolver exceptionResolver;
+
+    @Bean
+    public JwtFilter jwtFilter(){
+        return new JwtFilter(exceptionResolver);
+    }
+
     @Autowired
     public void authenticationManager(AuthenticationManagerBuilder aut) throws Exception {
         aut.authenticationProvider(authenticationProvider());
@@ -78,7 +85,7 @@ public class SecurityConfiguration {
         return http
                 .csrf().disable()
                 .authorizeHttpRequests()
-                .requestMatchers(HttpMethod.POST,"/user").permitAll()
+                .requestMatchers(HttpMethod.POST, "/user").permitAll()
                 .requestMatchers("/user/login").permitAll()
                 .requestMatchers(
                         "/api/v1/auth/**",
@@ -95,8 +102,8 @@ public class SecurityConfiguration {
                 .anyRequest()
                 .authenticated()
                 .and()
-                .exceptionHandling(e -> e.authenticationEntryPoint(entryPoint()))
-                .addFilterBefore(jwtFilter, UsernamePasswordAuthenticationFilter.class)
+//                .exceptionHandling().accessDeniedHandler(accessDeniedHandler())
+                .addFilterBefore(jwtFilter(), UsernamePasswordAuthenticationFilter.class)
                 .build();
     }
     private CorsConfigurationSource corsConfigurationSource(){
@@ -110,17 +117,42 @@ public class SecurityConfiguration {
 
         return source;
     }
-    public AuthenticationEntryPoint entryPoint(){
-        return ((req, res, ex) -> {
+
+    @Bean
+    public AccessDeniedHandler accessDeniedHandler() {
+        return (req, res, ex) -> {
             res.getWriter().println(gson.toJson(ResponseDto.builder()
-                    .code(VALIDATION_ERROR_CODE)
-                    .message("Token is not valid " + ex.getMessage() +
-                            (ex.getCause() != null ? ex.getCause().getMessage() : ""))
+                    .code(HttpStatus.FORBIDDEN.value())
+                    .message("Access denied: " + ex.getMessage())
                     .build()));
             res.setContentType("application/json");
-            res.setStatus(400);
-        });
+            res.setStatus(HttpStatus.FORBIDDEN.value());
+        };
     }
+//    public AuthenticationEntryPoint entryPoint() {
+//        return (req, res, ex) -> {
+//            int statusCode = HttpStatus.UNAUTHORIZED.value();
+//            String errorMessage = "Authentication failed";
+//
+//            if (ex instanceof BadCredentialsException) {
+//                errorMessage = "Invalid username or password";
+//            } else if (ex instanceof LockedException) {
+//                errorMessage = "Your account is locked";
+//                statusCode = HttpStatus.LOCKED.value();
+//            } else if (ex instanceof DisabledException) {
+//                errorMessage = "Your account is disabled";
+//                statusCode = HttpStatus.FORBIDDEN.value();
+//            }
+//
+//            res.getWriter().println(gson.toJson(ResponseDto.builder()
+//                    .code(statusCode)
+//                    .message(errorMessage)
+//                    .build()));
+//            res.setContentType("application/json");
+//            res.setStatus(statusCode);
+//        };
+//    }
+
     public DataSource dataSource(){
         SimpleDriverDataSource dataSource = new SimpleDriverDataSource();
         dataSource.setDriverClass(Driver.class);
