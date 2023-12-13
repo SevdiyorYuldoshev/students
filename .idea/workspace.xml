@@ -4,99 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5dcf92d4-8d94-4b12-bc95-ffc5fb4ef22f" name="Changes" comment="add all service methods.">
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+    <list default="true" id="5dcf92d4-8d94-4b12-bc95-ffc5fb4ef22f" name="Changes" comment="add all">
       <change beforePath="$PROJECT_DIR$/.idea/dataSources/96cc8741-bf59-422b-b347-579921ad05a8.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/96cc8741-bf59-422b-b347-579921ad05a8.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/96cc8741-bf59-422b-b347-579921ad05a8/storage_v2/_src_/database/tatu.rjU2AA/schema/public.abK9xQ.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/96cc8741-bf59-422b-b347-579921ad05a8/storage_v2/_src_/database/tatu.rjU2AA/schema/public.abK9xQ.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/students_project/config/ExceptionHandlerResources.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/students_project/config/ExceptionHandlerResources.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/students_project/config/SecurityConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/students_project/config/SecurityConfiguration.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/students_project/dto/PracticeDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/students_project/dto/PracticeDto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/students_project/dto/UploadDto.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/students_project/dto/UsersDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/students_project/dto/UsersDto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/students_project/entity/Practice.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/students_project/entity/Practice.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/students_project/entity/PracticeSolvedByUsers.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/students_project/entity/PracticeSolvedByUsers.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/students_project/entity/Subject.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/students_project/entity/Subject.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/students_project/entity/Users.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/students_project/entity/Users.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/students_project/rest/PracticeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/students_project/rest/PracticeController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/students_project/rest/PracticeSolvedByUsersController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/students_project/rest/PracticeSolvedByUsersController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/students_project/rest/SubjectController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/students_project/rest/SubjectController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/students_project/service/PracticeService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/students_project/service/PracticeService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/students_project/service/PracticeSolvedByUsersService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/students_project/service/PracticeSolvedByUsersService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/students_project/service/SubjectService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/students_project/service/SubjectService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/students_project/service/impl/PracticeServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/students_project/service/impl/PracticeServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/students_project/service/impl/PracticeSolvedByUsersServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/students_project/service/impl/PracticeSolvedByUsersServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/students_project/service/impl/SubjectServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/students_project/service/impl/SubjectServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/students_project/StudentsProjectApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/students_project/StudentsProjectApplication.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/students_project/config/ExceptionHandlerResources.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/students_project/config/ExceptionHandlerResources.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/students_project/config/LocalDateTimeDeserializer.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/students_project/config/LocalDateTimeDeserializer.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/students_project/config/LocalDateTimeSerializer.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/students_project/config/LocalDateTimeSerializer.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/students_project/config/SecurityConfiguration.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/students_project/config/SecurityConfiguration.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/students_project/dto/ErrorDto$ErrorDtoBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/students_project/dto/ErrorDto$ErrorDtoBuilder.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/students_project/dto/ErrorDto.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/students_project/dto/ErrorDto.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/students_project/dto/FileDto$FileDtoBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/students_project/dto/FileDto$FileDtoBuilder.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/students_project/dto/FileDto.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/students_project/dto/FileDto.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/students_project/dto/ImageDto$ImageDtoBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/students_project/dto/ImageDto$ImageDtoBuilder.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/students_project/dto/ImageDto.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/students_project/dto/ImageDto.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/students_project/dto/LoginDto$LoginDtoBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/students_project/dto/LoginDto$LoginDtoBuilder.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/students_project/dto/LoginDto.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/students_project/dto/LoginDto.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/students_project/dto/PracticeDto.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/students_project/dto/PracticeDto.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/students_project/dto/PracticeSolvedByUsersDto.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/students_project/dto/PracticeSolvedByUsersDto.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/students_project/dto/ResponseDto$ResponseDtoBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/students_project/dto/ResponseDto$ResponseDtoBuilder.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/students_project/dto/ResponseDto.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/students_project/dto/ResponseDto.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/students_project/dto/SubjectDto$SubjectDtoBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/students_project/dto/SubjectDto$SubjectDtoBuilder.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/students_project/dto/SubjectDto.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/students_project/dto/SubjectDto.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/students_project/dto/UsersDto$UsersDtoBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/students_project/dto/UsersDto$UsersDtoBuilder.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/students_project/dto/UsersDto.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/students_project/dto/UsersDto.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/students_project/entity/Image.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/students_project/entity/Image.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/students_project/entity/Practice.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/students_project/entity/Practice.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/students_project/entity/PracticeSolvedByUsers.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/students_project/entity/PracticeSolvedByUsers.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/students_project/entity/Subject.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/students_project/entity/Subject.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/students_project/entity/UserSession.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/students_project/entity/UserSession.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/students_project/entity/Users.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/students_project/entity/Users.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/students_project/io/FileDownload.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/students_project/io/FileDownload.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/students_project/io/FileUpload.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/students_project/io/FileUpload.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/students_project/repository/ImageRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/students_project/repository/ImageRepository.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/students_project/repository/PracticeRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/students_project/repository/PracticeRepository.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/students_project/repository/PracticeSolvedByUsersRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/students_project/repository/PracticeSolvedByUsersRepository.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/students_project/repository/SubjectRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/students_project/repository/SubjectRepository.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/students_project/repository/UserRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/students_project/repository/UserRepository.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/students_project/rest/FileController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/students_project/rest/FileController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/students_project/rest/ImageController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/students_project/rest/ImageController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/students_project/rest/PracticeController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/students_project/rest/PracticeController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/students_project/rest/PracticeSolvedByUsersController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/students_project/rest/PracticeSolvedByUsersController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/students_project/rest/SubjectController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/students_project/rest/SubjectController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/students_project/rest/UsersController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/students_project/rest/UsersController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/students_project/security/JwtFilter.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/students_project/security/JwtFilter.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/students_project/security/JwtService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/students_project/security/JwtService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/students_project/security/UserAuthorities.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/students_project/security/UserAuthorities.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/students_project/security/UserRoles.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/students_project/security/UserRoles.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/students_project/service/FileService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/students_project/service/FileService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/students_project/service/ImageService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/students_project/service/ImageService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/students_project/service/PracticeService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/students_project/service/PracticeService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/students_project/service/PracticeSolvedByUsersService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/students_project/service/PracticeSolvedByUsersService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/students_project/service/SubjectService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/students_project/service/SubjectService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/students_project/service/UsersService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/students_project/service/UsersService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/students_project/service/impl/FileServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/students_project/service/impl/FileServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/students_project/service/impl/ImageServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/students_project/service/impl/ImageServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/students_project/service/impl/PracticeServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/students_project/service/impl/PracticeServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/students_project/service/impl/PracticeSolvedByUsersServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/students_project/service/impl/PracticeSolvedByUsersServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/students_project/service/impl/SubjectServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/students_project/service/impl/SubjectServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/students_project/service/impl/UsersServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/students_project/service/impl/UsersServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/students_project/service/mapper/CommonMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/students_project/service/mapper/CommonMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/students_project/service/mapper/ImageMapperImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/students_project/service/mapper/ImageMapperImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/students_project/service/mapper/PracticeMapperImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/students_project/service/mapper/PracticeMapperImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/students_project/service/mapper/PracticeSolvedByUsersMapperImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/students_project/service/mapper/PracticeSolvedByUsersMapperImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/students_project/service/mapper/SubjectMapperImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/students_project/service/mapper/SubjectMapperImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/students_project/service/mapper/UsersMapperImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/students_project/service/mapper/UsersMapperImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/generated-sources/annotations/com/example/students_project/service/mapper/ImageMapperImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/target/generated-sources/annotations/com/example/students_project/service/mapper/ImageMapperImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/generated-sources/annotations/com/example/students_project/service/mapper/PracticeMapperImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/target/generated-sources/annotations/com/example/students_project/service/mapper/PracticeMapperImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/generated-sources/annotations/com/example/students_project/service/mapper/PracticeSolvedByUsersMapperImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/target/generated-sources/annotations/com/example/students_project/service/mapper/PracticeSolvedByUsersMapperImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/generated-sources/annotations/com/example/students_project/service/mapper/SubjectMapperImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/target/generated-sources/annotations/com/example/students_project/service/mapper/SubjectMapperImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/generated-sources/annotations/com/example/students_project/service/mapper/UsersMapperImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/target/generated-sources/annotations/com/example/students_project/service/mapper/UsersMapperImpl.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -245,6 +154,7 @@
       <workItem from="1702136643185" duration="2640000" />
       <workItem from="1702377390423" duration="4000" />
       <workItem from="1702400219899" duration="11256000" />
+      <workItem from="1702460083119" duration="309000" />
     </task>
     <task id="LOCAL-00001" summary="Kodlar qo'shildi">
       <created>1701512414429</created>
@@ -309,7 +219,14 @@
       <option name="project" value="LOCAL" />
       <updated>1702137094415</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="add all">
+      <created>1702460118038</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1702460118039</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -334,7 +251,8 @@
     <MESSAGE value="add all service method" />
     <MESSAGE value="add all service methods" />
     <MESSAGE value="add all service methods." />
-    <option name="LAST_COMMIT_MESSAGE" value="add all service methods." />
+    <MESSAGE value="add all" />
+    <option name="LAST_COMMIT_MESSAGE" value="add all" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
