@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5dcf92d4-8d94-4b12-bc95-ffc5fb4ef22f" name="Changes" comment="add all">
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/96cc8741-bf59-422b-b347-579921ad05a8.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/96cc8741-bf59-422b-b347-579921ad05a8.xml" afterDir="false" />
-    </list>
+    <list default="true" id="5dcf92d4-8d94-4b12-bc95-ffc5fb4ef22f" name="Changes" comment="add alls" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -154,7 +152,7 @@
       <workItem from="1702136643185" duration="2640000" />
       <workItem from="1702377390423" duration="4000" />
       <workItem from="1702400219899" duration="11256000" />
-      <workItem from="1702460083119" duration="309000" />
+      <workItem from="1702460083119" duration="758000" />
     </task>
     <task id="LOCAL-00001" summary="Kodlar qo'shildi">
       <created>1701512414429</created>
@@ -226,7 +224,14 @@
       <option name="project" value="LOCAL" />
       <updated>1702460118039</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="add alls">
+      <created>1702462095830</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1702462095830</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -252,7 +257,8 @@
     <MESSAGE value="add all service methods" />
     <MESSAGE value="add all service methods." />
     <MESSAGE value="add all" />
-    <option name="LAST_COMMIT_MESSAGE" value="add all" />
+    <MESSAGE value="add alls" />
+    <option name="LAST_COMMIT_MESSAGE" value="add alls" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
