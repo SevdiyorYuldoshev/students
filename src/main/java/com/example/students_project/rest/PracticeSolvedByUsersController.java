@@ -37,7 +37,7 @@ public class PracticeSolvedByUsersController {
     )
     @PreAuthorize("hasAnyRole('USER', 'ADMIN', 'SUPER_ADMIN')")
     @PostMapping
-    public ResponseDto<PracticeSolvedByUsersDto> addPracticeSolvedByUsers(@Valid @RequestBody PracticeSolvedByUsersDto practiceSolvedByUsersDto,
+    public ResponseDto<PracticeSolvedByUsersDto> addPracticeSolvedByUsers(@RequestBody PracticeSolvedByUsersDto practiceSolvedByUsersDto,
                                                                           @RequestParam Integer userId,
                                                                           @RequestParam Integer practiceId){
         return practiceSolvedByUsersService.addPracticeSolvedByUsers(practiceSolvedByUsersDto, userId, practiceId);
@@ -58,8 +58,9 @@ public class PracticeSolvedByUsersController {
     )
     @PreAuthorize("hasAnyRole('USER', 'ADMIN', 'SUPER_ADMIN')")
     @PatchMapping
-    public ResponseDto<PracticeSolvedByUsersDto> updatePracticeSolvedByUsers(@RequestBody PracticeSolvedByUsersDto practiceSolvedByUsersDto){
-        return practiceSolvedByUsersService.updatePracticeSolvedByUsers(practiceSolvedByUsersDto);
+    public ResponseDto<PracticeSolvedByUsersDto> updatePracticeSolvedByUsers(@Valid @RequestBody PracticeSolvedByUsersDto practiceSolvedByUsersDto,
+                                                                             @RequestParam Integer userId){
+        return practiceSolvedByUsersService.updatePracticeSolvedByUsers(practiceSolvedByUsersDto, userId);
     }
 
     @Operation(

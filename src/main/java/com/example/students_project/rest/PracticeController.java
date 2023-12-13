@@ -62,8 +62,9 @@ public class PracticeController {
     )
     @PreAuthorize("hasAnyRole('ADMIN', 'SUPER_ADMIN')")
     @PatchMapping
-    public ResponseDto<PracticeDto> updatePractice(@RequestBody PracticeDto practiceDto){
-        return practiceService.updatePractice(practiceDto);
+    public ResponseDto<PracticeDto> updatePractice(@RequestBody PracticeDto practiceDto,
+                                                   @RequestParam Integer userId){
+        return practiceService.updatePractice(practiceDto, userId);
     }
 
     @Operation(

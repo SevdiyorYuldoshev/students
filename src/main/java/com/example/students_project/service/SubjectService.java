@@ -9,7 +9,7 @@ import org.springframework.web.multipart.MultipartFile;
 public interface SubjectService {
     ResponseDto<SubjectDto> addSubject(SubjectDto subjectDto, Integer userId);
 
-    ResponseDto<SubjectDto> updateSubject(SubjectDto subjectDto);
+    ResponseDto<SubjectDto> updateSubject(SubjectDto subjectDto, Integer userId);
 
     ResponseDto<SubjectDto> getSubjectById(Integer id);
 

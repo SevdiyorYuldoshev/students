@@ -24,7 +24,7 @@ public class Subject {
     @Column(unique = true)
     private String lectureDocumentUrl;
     private Boolean activity;
-    @ManyToOne
+    @ManyToOne(cascade = {CascadeType.PERSIST, CascadeType.MERGE})
     @JoinColumn(name = "users_id")
 //    @JsonBackReference
     private Users users;

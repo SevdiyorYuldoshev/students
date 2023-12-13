@@ -37,7 +37,7 @@ public class PracticeDto {
     private LocalDateTime practiceDeadline;
     private String practiceFileUrl;
     private Boolean activity;
-    private int maxGrade;
+    private float maxGrade;
     @JsonIgnore
     private SubjectDto subjectDto;
     @JsonIgnore

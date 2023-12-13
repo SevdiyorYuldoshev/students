@@ -8,7 +8,7 @@ import org.springframework.hateoas.EntityModel;
 public interface PracticeService {
     ResponseDto<PracticeDto> addPractice(PracticeDto practiceDto, Integer subjectId);
 
-    ResponseDto<PracticeDto> updatePractice(PracticeDto practiceDto);
+    ResponseDto<PracticeDto> updatePractice(PracticeDto practiceDto, Integer userId);
 
     ResponseDto<PracticeDto> getPracticeById(Integer id);
 

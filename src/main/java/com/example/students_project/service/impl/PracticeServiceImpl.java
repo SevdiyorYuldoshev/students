@@ -46,15 +46,18 @@ public class PracticeServiceImpl implements PracticeService {
                     .code(NOT_FOUND_CODE)
                     .build();
         }
-        practiceDto.setSubjectDto(subjectMapper.toDto(byId.get()));
-        practiceDto.setActivity(true);
+
+        Practice practice =  practiceMapper.toEntity(practiceDto);
+        practice.setActivity(true);
+        practice.setSubject(subjectRepository.getReferenceById(subjectId));
+        practiceRepository.save(practice);
         return ResponseDto.<PracticeDto>builder()
-                .data(practiceMapper.toDto(practiceRepository.save(practiceMapper.toEntity(practiceDto))))
+                .data(practiceMapper.toDto(practice))
                 .build();
     }
 
     @Override
-    public ResponseDto<PracticeDto> updatePractice(PracticeDto practiceDto) {
+    public ResponseDto<PracticeDto> updatePractice(PracticeDto practiceDto, Integer userId) {
         if (practiceDto.getId() == null){
             return ResponseDto.<PracticeDto>builder()
                     .message(NULL_VALUE)
@@ -73,6 +76,12 @@ public class PracticeServiceImpl implements PracticeService {
                     .build();
         }
         Practice practice = practiceOptional.get();
+        if(practice.getSubject().getUsers().getId() != userId) {
+            return ResponseDto.<PracticeDto>builder()
+                    .message(NOT_FOUND)
+                    .code(NOT_FOUND_CODE)
+                    .build();
+        }
         if(!practice.getActivity()){
             return ResponseDto.<PracticeDto>builder()
                     .message(NOT_FOUND)
@@ -102,6 +111,7 @@ public class PracticeServiceImpl implements PracticeService {
                     .data(practiceMapper.toDto(practice))
                     .success(true)
                     .message(OK)
+                    .code(OK_CODE)
                     .build();
         }catch (Exception e){
             return ResponseDto.<PracticeDto>builder()

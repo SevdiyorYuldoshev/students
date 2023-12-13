@@ -5,6 +5,7 @@ import com.example.students_project.dto.ResponseDto;
 import com.example.students_project.dto.SubjectDto;
 import com.example.students_project.entity.Practice;
 import com.example.students_project.entity.PracticeSolvedByUsers;
+import com.example.students_project.entity.Subject;
 import com.example.students_project.entity.Users;
 import com.example.students_project.repository.PracticeRepository;
 import com.example.students_project.repository.PracticeSolvedByUsersRepository;
@@ -54,15 +55,21 @@ public class PracticeSolvedByUsersServiceImpl implements PracticeSolvedByUsersSe
                     .code(NOT_FOUND_CODE)
                     .build();
         }
-        practiceSolvedByUsersDto.setUsersDto(usersMapper.toDto(byId.get()));
-        practiceSolvedByUsersDto.setPracticeDto(practiceMapper.toDto(byPracticeId.get()));
+        PracticeSolvedByUsers pSBu = practiceSolvedByUsersMapper.toEntity(practiceSolvedByUsersDto);
+
+        pSBu.setPractice(practiceRepository.getReferenceById(practiceId));
+        pSBu.setUsers(userRepository.getReferenceById(userId));
+        practiceSolvedByUsersRepository.save(pSBu);
         return ResponseDto.<PracticeSolvedByUsersDto>builder()
-                .data(practiceSolvedByUsersMapper.toDto(practiceSolvedByUsersRepository.save(practiceSolvedByUsersMapper.toEntity(practiceSolvedByUsersDto))))
+                .data(practiceSolvedByUsersMapper.toDto(pSBu))
+                .success(true)
+                .message(OK)
+                .code(OK_CODE)
                 .build();
     }
 
     @Override
-    public ResponseDto<PracticeSolvedByUsersDto> updatePracticeSolvedByUsers(PracticeSolvedByUsersDto practiceSolvedByUsersDto) {
+    public ResponseDto<PracticeSolvedByUsersDto> updatePracticeSolvedByUsers(PracticeSolvedByUsersDto practiceSolvedByUsersDto, Integer userId) {
         if (practiceSolvedByUsersDto.getId() == null){
             return ResponseDto.<PracticeSolvedByUsersDto>builder()
                     .message(NULL_VALUE)
@@ -81,6 +88,14 @@ public class PracticeSolvedByUsersServiceImpl implements PracticeSolvedByUsersSe
                     .build();
         }
         PracticeSolvedByUsers pSBU = practiceSolvedByUsersOptional.get();
+
+
+        if(pSBU.getUsers().getId() != userId) {
+            return ResponseDto.<PracticeSolvedByUsersDto>builder()
+                    .message(NOT_FOUND)
+                    .code(NOT_FOUND_CODE)
+                    .build();
+        }
 
         if (practiceSolvedByUsersDto.getGrade() != 0){
             pSBU.setGrade(practiceSolvedByUsersDto.getGrade());

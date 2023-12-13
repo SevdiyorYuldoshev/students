@@ -4,6 +4,8 @@ import com.example.students_project.dto.ErrorDto;
 import com.example.students_project.dto.ResponseDto;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
+import org.hibernate.LazyInitializationException;
+import org.hibernate.PersistentObjectException;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.MethodArgumentNotValidException;
@@ -12,6 +14,8 @@ import org.springframework.web.bind.annotation.RestControllerAdvice;
 
 import java.io.FileNotFoundException;
 import java.security.SignatureException;
+import java.sql.SQLException;
+import java.lang.NullPointerException;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -56,6 +60,64 @@ public class ExceptionHandlerResources {
         List<ErrorDto> errorDtos = new ArrayList<>();
         errorDtos.add(ErrorDto.builder()
                         .field("url")
+                        .error(e.getMessage())
+                .build());
+        return ResponseEntity.badRequest()
+                .body(ResponseDto.<Void>builder()
+                        .code(NOT_FOUND_CODE)
+                        .message(NOT_FOUND)
+                        .errors(errorDtos)
+                        .build());
+    }
+
+    @ExceptionHandler(NullPointerException.class)
+    public ResponseEntity<ResponseDto<Void>> fileNullPointerException(NullPointerException e){
+        List<ErrorDto> errorDtos = new ArrayList<>();
+        errorDtos.add(ErrorDto.builder()
+                        .field("")
+                        .error(e.getMessage())
+                .build());
+        return ResponseEntity.badRequest()
+                .body(ResponseDto.<Void>builder()
+                        .code(NOT_FOUND_CODE)
+                        .message(NOT_FOUND)
+                        .errors(errorDtos)
+                        .build());
+    }
+
+    @ExceptionHandler(PersistentObjectException.class)
+    public ResponseEntity<ResponseDto<Void>> filePersistentObjectException(PersistentObjectException e){
+        List<ErrorDto> errorDtos = new ArrayList<>();
+        errorDtos.add(ErrorDto.builder()
+                        .field("")
+                        .error(e.getMessage())
+                .build());
+        return ResponseEntity.badRequest()
+                .body(ResponseDto.<Void>builder()
+                        .code(NOT_FOUND_CODE)
+                        .message(NOT_FOUND)
+                        .errors(errorDtos)
+                        .build());
+    }
+    @ExceptionHandler(SQLException.class)
+    public ResponseEntity<ResponseDto<Void>> fileSQLException(SQLException e){
+        List<ErrorDto> errorDtos = new ArrayList<>();
+        errorDtos.add(ErrorDto.builder()
+                        .field("")
+                        .error(e.getMessage())
+                .build());
+        return ResponseEntity.badRequest()
+                .body(ResponseDto.<Void>builder()
+                        .code(NOT_FOUND_CODE)
+                        .message(NOT_FOUND)
+                        .errors(errorDtos)
+                        .build());
+    }
+    @ExceptionHandler(LazyInitializationException.class)
+    public ResponseEntity<ResponseDto<Void>> fileLazyInitializationException(LazyInitializationException e){
+        List<ErrorDto> errorDtos = new ArrayList<>();
+        errorDtos.add(ErrorDto.builder()
+                        .field("")
                         .error(e.getMessage())
                 .build());
         return ResponseEntity.badRequest()

@@ -10,7 +10,7 @@ import org.springframework.stereotype.Service;
 public interface PracticeSolvedByUsersService {
     ResponseDto<PracticeSolvedByUsersDto> addPracticeSolvedByUsers(PracticeSolvedByUsersDto practiceSolvedByUsersDto, Integer userId, Integer practiceId);
 
-    ResponseDto<PracticeSolvedByUsersDto> updatePracticeSolvedByUsers(PracticeSolvedByUsersDto practiceSolvedByUsersDto);
+    ResponseDto<PracticeSolvedByUsersDto> updatePracticeSolvedByUsers(PracticeSolvedByUsersDto practiceSolvedByUsersDto, Integer userId);
 
     ResponseDto<PracticeSolvedByUsersDto> getPracticeSolvedByUsersById(Integer id);
 

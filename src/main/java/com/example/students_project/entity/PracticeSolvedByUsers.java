@@ -21,11 +21,11 @@ public class PracticeSolvedByUsers {
     private float grade;
     private float percentage;
     private String answersFileUrl;
-    @ManyToOne
+    @ManyToOne(cascade = {CascadeType.PERSIST, CascadeType.MERGE})
     @JoinColumn(name = "user_id")
 //    @JsonBackReference
     private Users users;
-    @ManyToOne
+    @ManyToOne(cascade = {CascadeType.PERSIST, CascadeType.MERGE})
     @JoinColumn(name = "practice_id")
 //    @JsonBackReference
     private Practice practice;

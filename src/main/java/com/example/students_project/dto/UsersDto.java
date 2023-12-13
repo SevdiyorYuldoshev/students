@@ -2,6 +2,7 @@ package com.example.students_project.dto;
 
 import com.example.students_project.security.UserRoles;
 import com.fasterxml.jackson.annotation.JsonIgnore;
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import jakarta.validation.constraints.Email;
 import jakarta.validation.constraints.NotEmpty;
 import jakarta.validation.constraints.NotNull;
@@ -19,6 +20,7 @@ import java.util.List;
 @AllArgsConstructor
 @NoArgsConstructor
 @Builder
+@JsonIgnoreProperties(value = {"accountNonLocked", "accountNonExpired", "credentialsNonExpired"})
 public class UsersDto implements UserDetails {
     private Integer id;
     private String firstname;
@@ -46,7 +48,6 @@ public class UsersDto implements UserDetails {
     private List<SubjectDto> subjects;
     @JsonIgnore
     private List<PracticeSolvedByUsersDto> practiceSolvedByUsersList;
-    @JsonIgnore
     private ImageDto imageDto;
 
     @Override

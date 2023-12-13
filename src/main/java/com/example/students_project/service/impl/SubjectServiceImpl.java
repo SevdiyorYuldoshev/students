@@ -38,18 +38,20 @@ public class SubjectServiceImpl implements SubjectService {
                     .code(NOT_FOUND_CODE)
                     .build();
         }
-        subjectDto.setUsersDto(usersMapper.toDto(byId.get()));
-        subjectDto.setActivity(true);
+        Subject subject = subjectMapper.toEntity(subjectDto);
+        subject.setActivity(true);
+        subject.setUsers(userRepository.getReferenceById(userId));
+        subjectRepository.save(subject);
         return ResponseDto.<SubjectDto>builder()
                 .success(true)
                 .code(OK_CODE)
                 .message(OK)
-                .data(subjectMapper.toDto(subjectRepository.save(subjectMapper.toEntity(subjectDto))))
+                .data(subjectMapper.toDto(subject))
                 .build();
     }
 
     @Override
-    public ResponseDto<SubjectDto> updateSubject(SubjectDto subjectDto) {
+    public ResponseDto<SubjectDto> updateSubject(SubjectDto subjectDto, Integer userId) {
         if (subjectDto.getId() == null){
             return ResponseDto.<SubjectDto>builder()
                     .message(NULL_VALUE)
@@ -68,6 +70,13 @@ public class SubjectServiceImpl implements SubjectService {
                     .build();
         }
         Subject subject = subjectOptional.get();
+
+        if(subject.getUsers().getId() != userId) {
+            return ResponseDto.<SubjectDto>builder()
+                    .message(NOT_FOUND)
+                    .code(NOT_FOUND_CODE)
+                    .build();
+        }
         if(!subject.getActivity()){
             return ResponseDto.<SubjectDto>builder()
                     .message(NOT_FOUND)

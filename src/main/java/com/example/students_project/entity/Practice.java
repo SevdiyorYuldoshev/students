@@ -25,8 +25,8 @@ public class Practice {
     private LocalDateTime practiceDeadline;
     private String practiceFileUrl;
     private Boolean activity;
-    private int maxGrade;
-    @ManyToOne
+    private float maxGrade;
+    @ManyToOne(cascade = {CascadeType.PERSIST, CascadeType.MERGE})
     @JoinColumn(name = "subject_id")
 //    @JsonBackReference
     private Subject subject;

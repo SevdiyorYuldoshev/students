@@ -102,7 +102,8 @@ public class SecurityConfiguration {
                 .anyRequest()
                 .authenticated()
                 .and()
-//                .exceptionHandling().accessDeniedHandler(accessDeniedHandler())
+                .exceptionHandling().accessDeniedHandler(accessDeniedHandler())
+                .and()
                 .addFilterBefore(jwtFilter(), UsernamePasswordAuthenticationFilter.class)
                 .build();
     }

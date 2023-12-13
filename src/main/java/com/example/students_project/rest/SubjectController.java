@@ -58,8 +58,9 @@ public class SubjectController {
     )
     @PreAuthorize("hasAnyRole('ADMIN', 'SUPER_ADMIN')")
     @PatchMapping
-    public ResponseDto<SubjectDto> updateSubject(@RequestBody SubjectDto subjectDto){
-        return subjectService.updateSubject(subjectDto);
+    public ResponseDto<SubjectDto> updateSubject(@RequestBody SubjectDto subjectDto,
+                                                 @RequestParam Integer userId){
+        return subjectService.updateSubject(subjectDto, userId);
     }
 
     @Operation(
