@@ -1,5 +1,6 @@
 package com.example.students_project.entity;
 
+import com.example.students_project.dto.TestInfoDto;
 import com.fasterxml.jackson.annotation.*;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
@@ -31,4 +32,6 @@ public class Subject {
     @OneToMany(mappedBy = "subject")
 //    @JsonManagedReference
     private List<Practice> practices;
+    @OneToMany(mappedBy = "subject")
+    private List<TestsInfo> testsInfos;
 }

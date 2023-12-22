@@ -48,6 +48,8 @@ public class UsersDto implements UserDetails {
     private List<SubjectDto> subjects;
     @JsonIgnore
     private List<PracticeSolvedByUsersDto> practiceSolvedByUsersList;
+    @JsonIgnore
+    private List<TestsSolvedByUsersDto> testsSolvedByUsersDtos;
     private ImageDto imageDto;
 
     @Override

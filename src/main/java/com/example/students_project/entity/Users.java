@@ -1,5 +1,6 @@
 package com.example.students_project.entity;
 
+import com.example.students_project.dto.TestsSolvedByUsersDto;
 import com.fasterxml.jackson.annotation.*;
 import jakarta.persistence.*;
 import lombok.*;
@@ -41,5 +42,7 @@ public class Users {
     @OneToOne(mappedBy = "users")
     @JoinColumn(name = "image_id")
     private Image image;
+    @OneToMany(mappedBy = "users")
+    private List<TestsSolvedByUsers> testsSolvedByUsers;
 
 }

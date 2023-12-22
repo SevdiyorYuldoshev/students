@@ -12,6 +12,7 @@ import io.swagger.v3.oas.annotations.media.Schema;
 import io.swagger.v3.oas.annotations.responses.ApiResponse;
 import io.swagger.v3.oas.annotations.security.SecurityRequirement;
 import jakarta.validation.Valid;
+import lombok.RequiredArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.hateoas.EntityModel;
@@ -24,9 +25,9 @@ import java.lang.reflect.Method;
 @RestController
 @RequestMapping("/user")
 @SecurityRequirement(name = "Authorization")
+@RequiredArgsConstructor
 public class UsersController {
-    @Autowired
-    private UsersService userService;
+    private final UsersService userService;
     @Operation(
             summary = "Add a new user",
             description = "This endpoint allows authorized users to add a new user.",

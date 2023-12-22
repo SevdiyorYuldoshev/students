@@ -166,7 +166,7 @@ public class SubjectServiceImpl implements SubjectService {
         subject.setActivity(false);
         subjectRepository.save(subject);
         return ResponseDto.<SubjectDto>builder()
-                .message("User with ID " + id + " is deleted")
+                .message("Subject with ID " + id + " is deleted")
                 .code(OK_CODE)
                 .data(subjectMapper.toDto(subject))
                 .build();
